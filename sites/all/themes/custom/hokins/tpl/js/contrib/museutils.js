@@ -14,23 +14,6 @@
  Dissemination of this information or reproduction of this material
  is strictly forbidden unless prior written permission is obtained
  from Adobe Systems Incorporated.
-*/
-/*
- ADOBE CONFIDENTIAL
- ___________________
-
- Copyright 2011 Adobe Systems Incorporated
- All Rights Reserved.
-
- NOTICE:  All information contained herein is, and remains
- the property of Adobe Systems Incorporated and its suppliers,
- if any.  The intellectual and technical concepts contained
- herein are proprietary to Adobe Systems Incorporated and its
- suppliers and may be covered by U.S. and Foreign Patents,
- patents in process, and are protected by trade secret or copyright law.
- Dissemination of this information or reproduction of this material
- is strictly forbidden unless prior written permission is obtained
- from Adobe Systems Incorporated.
  */
 if (typeof Muse == "undefined") window.Muse = {};
 Muse.Assert = {};
@@ -434,7 +417,6 @@ Muse.Utils.getAnchorWithDestination = function(a) {
     if (!a || !a.replace) return jQuery(a);
     return jQuery(a.replace(/([\.\:])/gi, "\\jQuery.1"))
 };
-/*
 Muse.Utils.saveHyperlinkInfo = function(a, b, c, d, f) {
     var g = a.attr("href"),
         k = Muse.Utils.pathOnly(g),
@@ -484,7 +466,7 @@ Muse.Utils.saveHyperlinkInfo = function(a, b, c, d, f) {
                         hyperLinks: [],
                         from: d,
                         to: k,
-                        jQuery.elem: c,
+                        /*jQuery.elem : c,*/
                         href: g
                 });
                 h = f.length - 1
@@ -493,7 +475,7 @@ Muse.Utils.saveHyperlinkInfo = function(a, b, c, d, f) {
         f[h].hyperLinks.push(a)
     }
 }
-};*/
+};
 Muse.Utils.isIBE = function() {
     return Muse.Utils.readCookie("inbrowserediting") == "true"
 };
@@ -985,9 +967,10 @@ Muse.Browser.Bugs.ClearNeedsOuterWidth = function() {
     b = c.getBoundingClientRect().top - b.getBoundingClientRect().top;
     document.body.removeChild(a);
     return b < 1
-    //return TRUE; /*CBEZAUD*/
 }();
-Muse.Browser.Bugs.CannotHandleClearBoth = function() {return jQuery.browser.msie && 7 == jQuery.browser.version}();
+Muse.Browser.Bugs.CannotHandleClearBoth = function() {
+    return jQuery.browser.msie && 7 == jQuery.browser.version
+}();
 Muse.Browser.Bugs.ScrollWidthHeightIncludesBorder = function() {
     var a = !1,
         b = jQuery("<div>").css({

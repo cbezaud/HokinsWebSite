@@ -99,34 +99,34 @@ jQuery(document).ready(function () {
         jQuery('#u634').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,1984.95],"opacity":0},{"in":[1984.95,1984.95],"opacity":100},{"fade":50,"in":[1984.95,Infinity],"opacity":100}]);
 
         // Video
-        jQuery('#u355-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,2486.02],"opacity":0},{"in":[2486.02,2486.02],"opacity":100},{"fade":50,"in":[2486.02,Infinity],"opacity":100}]);
-        jQuery('#u920').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,580],"opacity":0},{"in":[580,580],"opacity":100},{"fade":50,"in":[580,Infinity],"opacity":100}]);
-        jQuery('#u922').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,580],"opacity":0},{"in":[580,580],"opacity":100},{"fade":50,"in":[580,Infinity],"opacity":100}]);
-        jQuery('#u283').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,580],"opacity":0},{"in":[580,580],"opacity":100},{"fade":50,"in":[580,Infinity],"opacity":100}]);
+//        jQuery('#u355-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,2486.02],"opacity":0},{"in":[2486.02,2486.02],"opacity":100},{"fade":50,"in":[2486.02,Infinity],"opacity":100}]);
+//        jQuery('#u920').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,580],"opacity":0},{"in":[580,580],"opacity":100},{"fade":50,"in":[580,Infinity],"opacity":100}]);
+//        jQuery('#u922').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,580],"opacity":0},{"in":[580,580],"opacity":100},{"fade":50,"in":[580,Infinity],"opacity":100}]);
+//        jQuery('#u283').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,580],"opacity":0},{"in":[580,580],"opacity":100},{"fade":50,"in":[580,Infinity],"opacity":100}]);
 
         // Icones a coté de l'album
         //jQuery('#u1008').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,580],"opacity":0},{"in":[580,580],"opacity":100},{"fade":50,"in":[580,Infinity],"opacity":100}]);
         //jQuery('#u1016').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,580],"opacity":0},{"in":[580,580],"opacity":100},{"fade":50,"in":[580,Infinity],"opacity":100}]);
-        jQuery('#u354-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,2536.02],"opacity":0},{"in":[2536.02,2536.02],"opacity":100},{"fade":50,"in":[2536.02,Infinity],"opacity":100}]);
+//        jQuery('#u354-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,2536.02],"opacity":0},{"in":[2536.02,2536.02],"opacity":100},{"fade":50,"in":[2536.02,Infinity],"opacity":100}]);
 
         // Review
-        jQuery('#u369-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,3468.02],"opacity":0},{"in":[3468.02,3468.02],"opacity":100},{"fade":50,"in":[3468.02,Infinity],"opacity":100}]);
-        jQuery('#u368-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,3518.02],"opacity":0},{"in":[3518.02,3518.02],"opacity":100},{"fade":50,"in":[3518.02,Infinity],"opacity":100}]);
-        jQuery('#u467').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,4073.92],"opacity":0},{"in":[4073.92,4073.92],"opacity":100},{"fade":50,"in":[4073.92,Infinity],"opacity":100}]);
+//        jQuery('#u369-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,3468.02],"opacity":0},{"in":[3468.02,3468.02],"opacity":100},{"fade":50,"in":[3468.02,Infinity],"opacity":100}]);
+//        jQuery('#u368-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,3518.02],"opacity":0},{"in":[3518.02,3518.02],"opacity":100},{"fade":50,"in":[3518.02,Infinity],"opacity":100}]);
+//        jQuery('#u467').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,4073.92],"opacity":0},{"in":[4073.92,4073.92],"opacity":100},{"fade":50,"in":[4073.92,Infinity],"opacity":100}]);
 
         // Preorder
         //jQuery('#u489-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,4263.92],"opacity":0},{"in":[4263.92,4263.92],"opacity":100},{"fade":50,"in":[4263.92,Infinity],"opacity":100}]);
         //jQuery('#u488-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,4313.93],"opacity":0},{"in":[4313.93,4313.93],"opacity":100},{"fade":50,"in":[4313.93,Infinity],"opacity":100}]);
 
         // Video
-        jQuery('#u360').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,2644],"opacity":0},{"in":[2644,2644],"opacity":100},{"fade":50,"in":[2644,Infinity],"opacity":100}]);
+//        jQuery('#u360').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,2644],"opacity":0},{"in":[2644,2644],"opacity":100},{"fade":50,"in":[2644,Infinity],"opacity":100}]);
 
         /* #pamphletu383 LE groupe */
-        Muse.Utils.initWidget('#pamphletu383', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'horizontal',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false}); });
+//        Muse.Utils.initWidget('#pamphletu383', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'horizontal',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false}); });
         // Titre
-        jQuery('#u555-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,5244.03],"opacity":0},{"in":[5244.03,5244.03],"opacity":100},{"fade":50,"in":[5244.03,Infinity],"opacity":100}]);
+//        jQuery('#u555-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,5244.03],"opacity":0},{"in":[5244.03,5244.03],"opacity":100},{"fade":50,"in":[5244.03,Infinity],"opacity":100}]);
         // Presse Kit
-        jQuery('#u554-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,5294.03],"opacity":0},{"in":[5294.03,5294.03],"opacity":100},{"fade":50,"in":[5294.03,Infinity],"opacity":100}]);
+//        jQuery('#u554-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,5294.03],"opacity":0},{"in":[5294.03,5294.03],"opacity":100},{"fade":50,"in":[5294.03,Infinity],"opacity":100}]);
 
         // PREorder
         //jQuery('#u903').registerPositionScrollEffect([{"in":[-Infinity,4564],"speed":[3,1]},{"in":[4564,Infinity],"speed":[0,1]}]);
@@ -134,40 +134,40 @@ jQuery(document).ready(function () {
         //jQuery('#u902').registerPositionScrollEffect([{"in":[-Infinity,4564],"speed":[-3,1]},{"in":[4564,Infinity],"speed":[0,1]}]);
 
         // Album release
-        jQuery('#u556-4').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,5495],"opacity":0},{"in":[5495,5495],"opacity":100},{"fade":50,"in":[5495,Infinity],"opacity":100}]);
+//        jQuery('#u556-4').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,5495],"opacity":0},{"in":[5495,5495],"opacity":100},{"fade":50,"in":[5495,Infinity],"opacity":100}]);
 
         // Vide entre presse kit et photo
-        jQuery('#u557').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,5502],"opacity":0},{"in":[5502,5502],"opacity":100},{"fade":50,"in":[5502,Infinity],"opacity":100}]);
+//        jQuery('#u557').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,5502],"opacity":0},{"in":[5502,5502],"opacity":100},{"fade":50,"in":[5502,Infinity],"opacity":100}]);
 
         // Photos
-        jQuery('#u560-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,5653.03],"opacity":0},{"in":[5653.03,5653.03],"opacity":100},{"fade":50,"in":[5653.03,Infinity],"opacity":100}]);
-        jQuery('#u561-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,5703.03],"opacity":0},{"in":[5703.03,5703.03],"opacity":100},{"fade":50,"in":[5703.03,Infinity],"opacity":100}]);
+//        jQuery('#u560-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,5653.03],"opacity":0},{"in":[5653.03,5653.03],"opacity":100},{"fade":50,"in":[5653.03,Infinity],"opacity":100}]);
+//        jQuery('#u561-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,5703.03],"opacity":0},{"in":[5703.03,5703.03],"opacity":100},{"fade":50,"in":[5703.03,Infinity],"opacity":100}]);
 
         /* #pamphletu562 Photos */
-        Muse.Utils.initWidget('#pamphletu562', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'horizontal',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false}); });
+//        Muse.Utils.initWidget('#pamphletu562', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'horizontal',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false}); });
 
         // Tour Date
-        jQuery('#u598-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,6668.02],"opacity":0},{"in":[6668.02,6668.02],"opacity":100},{"fade":50,"in":[6668.02,Infinity],"opacity":100}]);
-        jQuery('#u597-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,6718.03],"opacity":0},{"in":[6718.03,6718.03],"opacity":100},{"fade":50,"in":[6718.03,Infinity],"opacity":100}]);
-        jQuery('#u725').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,7446.88],"opacity":0},{"in":[7446.88,7446.88],"opacity":100},{"fade":50,"in":[7446.88,Infinity],"opacity":100}]);
+//        jQuery('#u598-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,6668.02],"opacity":0},{"in":[6668.02,6668.02],"opacity":100},{"fade":50,"in":[6668.02,Infinity],"opacity":100}]);
+//        jQuery('#u597-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,6718.03],"opacity":0},{"in":[6718.03,6718.03],"opacity":100},{"fade":50,"in":[6718.03,Infinity],"opacity":100}]);
+//        jQuery('#u725').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,7446.88],"opacity":0},{"in":[7446.88,7446.88],"opacity":100},{"fade":50,"in":[7446.88,Infinity],"opacity":100}]);
 
         // Booking Artist
         //jQuery('#u727-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,7636.88],"opacity":0},{"in":[7636.88,7636.88],"opacity":100},{"fade":50,"in":[7636.88,Infinity],"opacity":100}]);
         //jQuery('#u726-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,7686.88],"opacity":0},{"in":[7686.88,7686.88],"opacity":100},{"fade":50,"in":[7686.88,Infinity],"opacity":100}]);
 
         // Contact
-        jQuery('#u753').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,8174.4],"opacity":0},{"in":[8174.4,8174.4],"opacity":100},{"fade":50,"in":[8174.4,Infinity],"opacity":100}]);
-        jQuery('#u756-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8362.03],"opacity":0},{"in":[8362.03,8362.03],"opacity":100},{"fade":50,"in":[8362.03,Infinity],"opacity":100}]);
-        jQuery('#u757-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8412.03],"opacity":0},{"in":[8412.03,8412.03],"opacity":100},{"fade":50,"in":[8412.03,Infinity],"opacity":100}]);
-        jQuery('#u832-8').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
-        jQuery('#u765').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
-        jQuery('#u766').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
-        jQuery('#u890-8').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
+//        jQuery('#u753').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,8174.4],"opacity":0},{"in":[8174.4,8174.4],"opacity":100},{"fade":50,"in":[8174.4,Infinity],"opacity":100}]);
+//        jQuery('#u756-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8362.03],"opacity":0},{"in":[8362.03,8362.03],"opacity":100},{"fade":50,"in":[8362.03,Infinity],"opacity":100}]);
+//        jQuery('#u757-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8412.03],"opacity":0},{"in":[8412.03,8412.03],"opacity":100},{"fade":50,"in":[8412.03,Infinity],"opacity":100}]);
+//        jQuery('#u832-8').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
+//        jQuery('#u765').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
+//        jQuery('#u766').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
+//        jQuery('#u890-8').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
         //jQuery('#u767').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
-        jQuery('#u780').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
-        jQuery('#u783').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
-        jQuery('#u781').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
-        jQuery('#u782').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
+//        jQuery('#u780').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
+//        jQuery('#u783').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
+//        jQuery('#u781').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
+//        jQuery('#u782').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);
 
         // Tour Date
         jQuery('#u881').registerPositionScrollEffect([{"in":[-Infinity,6826],"speed":[0,3]},{"in":[6826,Infinity],"speed":[0,1]}]);
@@ -189,7 +189,7 @@ jQuery(document).ready(function () {
             e.notify();
         }
         else {
-            Muse.Assert.fail('Error calling selector function:' + e);
+//            Muse.Assert.fail('Error calling selector function:' + e);
         }
     }
 });

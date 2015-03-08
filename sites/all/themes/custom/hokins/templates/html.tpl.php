@@ -1,27 +1,11 @@
-<?php
-/**
- * @file
- * Returns the HTML for the basic html structure of a single Drupal page.
- *
- * Complete documentation for this file is available online.
- * @see https://drupal.org/node/1728208
- */
-?><!DOCTYPE html>
-<!--[if IEMobile 7]><html class="iem7" <?php print $html_attributes; ?> lang="en-GB"><![endif]-->
-<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?> lang="en-GB"><![endif]-->
-<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" <?php print $html_attributes; ?> lang="en-GB"><![endif]-->
-<!--[if IE 8]><html class="lt-ie9" <?php print $html_attributes; ?>><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?> lang="en-GB"><!--<![endif]-->
-
+<!DOCTYPE html>
+<html class="html" lang="en-GB">
 <head>
-  <?php print $head; ?>
 
   <script type="text/javascript">
-    if(typeof Muse == "undefined") {
-      window.Muse = {};
-    }
+    if (typeof Muse == "undefined") window.Muse = {};
     window.Muse.assets = {
-      "required":[
+      "required": [
         "jquery-1.8.3.min.js",
         "museutils.js",
         "webpro.js",
@@ -32,14 +16,13 @@
         "jquery.musepolyfill.bgsize.js",
         "jquery.watch.js",
         "jquery.musemenu.js",
-        "museredirect.js",
-        "index.css"
-      ],
-      "outOfDate":[]
+        //"museredirect.js",
+        "index.css"],
+      "outOfDate": []
     };
   </script>
 
-  <!--script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/museredirect.js" type="text/javascript"></script-->
+  <!--script src="./tpl/js/contrib/museredirect.js?17485671" type="text/javascript"></script-->
   <script type="text/javascript">
     //Muse.Redirect.redirect('desktop', 'tablet/index.html', 'phone/index.html', '');
   </script>
@@ -49,153 +32,952 @@
   <meta name="keywords" content="Hokins, rock, punk, website, music, track, single, landing, one page"/>
   <meta name="generator" content="2014.2.1.284"/>
 
-  <link rel="shortcut icon" href="/<?php echo path_to_theme(); ?>/tpl/img/home-favicon.ico"/>
+  <!-- link rel="shortcut icon" href="/sites/all/themes/custom/hokins/tpl/img/home-favicon.ico"/ -->
 
-  <title><?php //print $head_title; ?>HOKINS &#45; EP Release</title>
-
-  <?php if ($default_mobile_metatags): ?>
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width">
-  <?php endif; ?>
-  <meta http-equiv="cleartype" content="on">
+  <title>HOKINS &#45; EP Release</title>
+  <!--link media="only screen and (max-device-width: 370px)" rel="alternate" href="http://www.tools4dj.ru/phone/index.html"/>
+  <link media="only screen and (max-device-width: 960px)" rel="alternate" href="http://www.tools4dj.ru/tablet/index.html"/-->
 
   <!-- CSS -->
-  <?php print $styles; ?>
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/custom/hokins/tpl/css/site_global.css"/>
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/custom/hokins/tpl/css/index.css" id="pagesheet"/>
+
   <!--[if lt IE 9]>
-  <link rel="stylesheet"
-        type="text/css"
-        href="/<?php echo path_to_theme(); ?>/tpl/css/iefonts_index"/>
+  <link rel="stylesheet" type="text/css"
+        href="/sites/all/themes/custom/hokins/tpl/css/iefonts_index.css?379738519"/>
   <![endif]-->
-
-
-
-  <?php if ($add_html5_shim and !$add_respond_js): ?>
-    <!--[if lt IE 9]>
-    <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
-    <![endif]-->
-  <?php elseif ($add_html5_shim and $add_respond_js): ?>
-    <!--[if lt IE 9]>
-    <script src="<?php print $base_path . $path_to_zen; ?>/js/html5-respond.js"></script>
-    <![endif]-->
-  <?php elseif ($add_respond_js): ?>
-    <!--[if lt IE 9]>
-    <script src="<?php print $base_path . $path_to_zen; ?>/js/respond.js"></script>
-    <![endif]-->
-  <?php endif; ?>
-
   <!-- Other scripts -->
   <script type="text/javascript">
     document.documentElement.className += ' js';
     var __adobewebfontsappname__ = "muse";
   </script>
   <!-- JS includes -->
-  <script type="text/javascript">
-    document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/montserrat:n4:all;raleway:n4,n7,n6:all.js" type="text/javascript">\x3C/script>');
-  </script>
+  <script src="https://webfonts.creativecloud.com/montserrat:n4:all;raleway:n4,n7,n6:all.js" type="text/javascript"></script>
   <!--[if lt IE 9]>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/html5shiv.js" type="text/javascript"></script>
+    <script src="/sites/all/themes/custom/hokins/tpl/js/contrib/html5shiv.js" type="text/javascript"></script>
   <![endif]-->
-
   <!--custom head HTML-->
-  <!--script type="text/javascript" src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/gumroad.js"></script-->
-  <?php //print $scripts; ?>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/jquery-1.8.3.min.js" type="text/javascript"></script>
-  <script type="text/javascript">jQuery.noConflict();</script>
-  <script type="text/javascript">var $ = jQuery</script>
-
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/museutils.js" type="text/javascript"></script>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/jquery.musepolyfill.bgsize.js" type="text/javascript"></script>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/jquery.scrolleffects.js" type="text/javascript"></script>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/webpro.js?474087315" type="text/javascript"></script>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/musewpslideshow.js" type="text/javascript"></script>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/jquery.museoverlay.js" type="text/javascript"></script>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/touchswipe.js" type="text/javascript"></script>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/jquery.musemenu.js" type="text/javascript"></script>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/jquery.mousewheel.min.js" type="text/javascript"></script>
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/contrib/jquery.watch.js" type="text/javascript"></script>
-  <!-- Other scripts -->
-  <script src="/<?php echo path_to_theme(); ?>/tpl/js/custom/common.js" type="text/javascript"></script>
-
+  <!--script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/gumroad.js"></script-->
 </head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+<body class="museBGSize">
 
-  <?php print $page_top; ?>
-  <?php print $page; ?>
-  <?php print $page_bottom; ?>
+<div class="clearfix" id="page"><!-- column -->
+  <div class="position_content" id="page_position_content">
+    <a class="anchor_item colelem" id="top"></a>
+    <div class="clearfix mse_pre_init" id="u93-4"><!-- content -->
+      <p>Site Officiel des</p>
+    </div>
+    <div class="colelem" id="u616"><!-- custom html --></div>
+    <div class="clearfix mse_pre_init" id="u81-4"><!-- content -->
+      <h1 style="display: none;">HOKINS</h1>
+    </div>
+    <div class="mse_pre_init" id="u96"><!-- simple frame --></div>
+    <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1447">
+      <!-- none box -->
+      <div class="ThumbGroup clearfix grpelem" id="u1448"><!-- none box -->
+        <div class="popup_anchor">
+          <a class="nonblock nontext Thumb popup_element anim_swing" id="u1449" href="#top"><!-- simple frame --></a>
+        </div>
+      </div>
+      <div class="popup_anchor" id="u1456popup">
+        <div class="ContainerGroup clearfix" id="u1456"><!-- stack box -->
+          <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1457" href="#top"><!-- group -->
+            <div class="clearfix grpelem" id="u1458-4"><!-- content --><p>HOME</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav class="MenuBar clearfix pinned-colelem" id="menuu1376"><!-- vertical box -->
+      <div class="MenuItemContainer clearfix colelem" id="u1391"><!-- horizontal box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1394" href="#top"><!-- horizontal box --></a>
+      </div>
+      <div class="MenuItemContainer clearfix colelem" id="u1405"><!-- horizontal box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1408" href="#album"><!-- horizontal box --></a>
+      </div>
+      <div class="MenuItemContainer clearfix colelem" id="u1377"><!-- horizontal box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1380" href="#listen"><!-- horizontal box --></a>
+      </div>
+      <div class="MenuItemContainer clearfix colelem" id="u1384"><!-- horizontal box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1387" href="#video"><!-- horizontal box --></a>
+      </div>
+      <div class="MenuItemContainer clearfix colelem" id="u1426"><!-- horizontal box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1429" href="#reviews"><!-- horizontal box --></a>
+      </div>
+      <!--div class="MenuItemContainer clearfix colelem" id="u1440">
+          <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1441" href="#preorder"></a>
+      </div>
+      <div class="MenuItemContainer clearfix colelem" id="u1398">
+          <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1399" href="#about"></a>
+      </div-->
+      <div class="MenuItemContainer clearfix colelem" id="u1412"><!-- horizontal box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1413" href="#photos"><!-- horizontal box --></a>
+      </div>
+      <div class="MenuItemContainer clearfix colelem" id="u1433"><!-- horizontal box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1434" href="#tourdates"><!-- horizontal box --></a>
+      </div>
+      <!--div class="MenuItemContainer clearfix colelem" id="u1419">
+          <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1420" href="#booking"></a>
+      </div-->
+      <div class="MenuItemContainer clearfix colelem" id="u1593"><!-- horizontal box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing rounded-corners grpelem" id="u1594" href="#contactsm"><!-- horizontal box --></a>
+      </div>
+    </nav>
+    <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1459">
+      <!-- Album -->
+      <div class="ThumbGroup clearfix grpelem" id="u1460"><!-- none box -->
+        <div class="popup_anchor">
+          <a class="nonblock nontext Thumb popup_element anim_swing" id="u1461" href="#album"><!-- simple frame --></a>
+        </div>
+      </div>
+      <div class="popup_anchor" id="u1464popup">
+        <div class="ContainerGroup clearfix" id="u1464"><!-- stack box -->
+          <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1465" href="#album"><!-- group -->
+            <div class="clearfix grpelem" id="u1466-4"><!-- content --><p>ALBUM INFO</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1471">
+      <!-- Listen -->
+      <div class="ThumbGroup clearfix grpelem" id="u1479"><!-- none box -->
+        <div class="popup_anchor">
+          <a class="nonblock nontext Thumb popup_element anim_swing" id="u1480"href="#listen"><!-- simple frame --></a>
+        </div>
+      </div>
+      <div class="popup_anchor" id="u1476popup">
+        <div class="ContainerGroup clearfix" id="u1476"><!-- stack box -->
+          <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1477" href="#listen"><!-- group -->
+            <div class="clearfix grpelem" id="u1478-4"><!-- content --><p>EN ECOUTE</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix mse_pre_init" id="u185-17"><!--  Menu top left -->
+      <p><a class="nonblock anim_swing" href="#album">EP</a></p>
+      <p><a class="nonblock anim_swing" href="#listen">EN ECOUTE</a> </p>
+      <p><a class="nonblock anim_swing" href="#video">VIDEO CLIP</a> </p>
+      <p><a class="nonblock anim_swing" href="#reviews">AVIS</a></p>
+      <!--p><a class="nonblock anim_swing" href="#preorder">PREORDER</a></p-->
+    </div>
+    <div class="clearfix mse_pre_init" id="u187-17"><!--  Menu top right -->
+      <p><a class="nonblock anim_swing" href="#about"><span id="u187">A PROPOS</span></a> </p>
+      <p><a class="nonblock anim_swing" href="#photos"><span id="u187-4">&nbsp;PHOTOS</span></a></p>
+      <p><a class="nonblock anim_swing" href="#tourdates"><span id="u187-7">DATES</span></a></p>
+      <!--p><a class="nonblock anim_swing" href="#booking"><span id="u187-10">BOOKING</span></a></p-->
+      <p><a class="nonblock anim_swing" href="#contacts"><span id="u187-13">CONTACTS</span></a></p>
+    </div>
+    <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1483"><!-- Video -->
+      <div class="ThumbGroup clearfix grpelem" id="u1486"><!-- none box -->
+        <div class="popup_anchor">
+          <a class="nonblock nontext Thumb popup_element anim_swing" id="u1487" href="#video"><!-- simple frame --></a>
+        </div>
+      </div>
+      <div class="popup_anchor" id="u1490popup">
+        <div class="ContainerGroup clearfix" id="u1490"><!-- stack box -->
+          <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1491" href="#video"><!-- group -->
+            <div class="clearfix grpelem" id="u1492-4"><!-- content --> <p> VIDEO</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1495">
+      <!-- Reviews -->
+      <div class="ThumbGroup clearfix grpelem" id="u1503"><!-- none box -->
+        <div class="popup_anchor">
+          <a class="nonblock nontext Thumb popup_element anim_swing" id="u1504" href="#reviews"><!-- simple frame --></a>
+        </div>
+      </div>
+      <div class="popup_anchor" id="u1496popup">
+        <div class="ContainerGroup clearfix" id="u1496"><!-- stack box -->
+          <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1497" href="#reviews"><!-- group -->
+            <div class="clearfix grpelem" id="u1498-4"><!-- content --><p>AVIS</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1507"><!-- preorder
+        <div class="ThumbGroup clearfix grpelem" id="u1513">
+            <div class="popup_anchor">
+                <a class="nonblock nontext Thumb popup_element anim_swing" id="u1514" href="#preorder"></a>
+            </div>
+        </div>
+        <div class="popup_anchor" id="u1508popup">
+            <div class="ContainerGroup clearfix" id="u1508">
+                <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1509" href="#preorder"><div class="clearfix grpelem" id="u1510-4"><p>PREORDER</p></div></a>
+            </div>
+        </div>
+    </div -->
+    <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1519">
+      <!-- about -->
+      <div class="ThumbGroup clearfix grpelem" id="u1520"><!-- none box -->
+        <div class="popup_anchor">
+          <a class="nonblock nontext Thumb popup_element anim_swing" id="u1521" href="#about"><!-- simple frame --></a>
+        </div>
+      </div>
+      <div class="popup_anchor" id="u1524popup">
+        <div class="ContainerGroup clearfix" id="u1524"><!-- stack box -->
+          <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1525" href="#about"><!-- group -->
+            <div class="clearfix grpelem" id="u1526-4"><!-- content --> <p>A PROPOS DU GROUPE</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1555"><!-- photos -->
+      <div class="ThumbGroup clearfix grpelem" id="u1556"><!-- none box -->
+        <div class="popup_anchor">
+          <a class="nonblock nontext Thumb popup_element anim_swing" id="u1557" href="#photos"><!-- simple frame --></a>
+        </div>
+      </div>
+      <div class="popup_anchor" id="u1564popup">
+        <div class="ContainerGroup clearfix" id="u1564"><!-- stack box -->
+          <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1565" href="#photos"><!-- group -->
+            <div class="clearfix grpelem" id="u1566-4"><!-- content --><p>PHOTOS</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1543"><!-- tourdates -->
+      <div class="ThumbGroup clearfix grpelem" id="u1544"><!-- none box -->
+        <div class="popup_anchor">
+          <a class="nonblock nontext Thumb popup_element anim_swing" id="u1545"
+             href="#tourdates"><!-- simple frame --></a>
+        </div>
+      </div>
+      <div class="popup_anchor" id="u1548popup">
+        <div class="ContainerGroup clearfix" id="u1548"><!-- stack box -->
+          <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1549" href="#tourdates"><!-- group -->
+            <div class="clearfix grpelem" id="u1550-4"><!-- content --><p>TOUR DATES</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1531">
+        <div class="ThumbGroup clearfix grpelem" id="u1532">
+            <div class="popup_anchor">
+                <a class="nonblock nontext Thumb popup_element anim_swing" id="u1533" href="#booking"></a>
+            </div>
+        </div>
+        <div class="popup_anchor" id="u1540popup">
+            <div class="ContainerGroup clearfix" id="u1540">
+                <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1541" href="#booking"><div class="clearfix grpelem" id="u1542-4"><p>BOOKING</p></div></a>
+            </div>
+        </div>
+    </div-->
+    <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1612"><!-- contacts -->
+      <div class="ThumbGroup clearfix grpelem" id="u1617"><!-- none box -->
+        <div class="popup_anchor">
+          <a class="nonblock nontext Thumb popup_element anim_swing" id="u1618" href="#contacts"><!-- simple frame --></a>
+        </div>
+      </div>
+      <div class="popup_anchor" id="u1619popup">
+        <div class="ContainerGroup clearfix" id="u1619"><!-- stack box -->
+          <a class="nonblock nontext Container anim_swing invi clearfix grpelem" id="u1620" href="#contacts"><!-- group -->
+            <div class="clearfix grpelem" id="u1621-4"><!-- content --><p> CONTACTS</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix colelem" id="pu105"><!-- group -->
+      <div class="browser_width grpelem" id="u105-bw">
+        <div id="u105"><!-- simple frame --></div>
+      </div>
+      <div class="browser_width grpelem" id="u113-bw">
+        <div id="u113"><!-- column -->
+          <div class="clearfix" id="u113_align_to_page">
 
-  <script type="text/javascript">
-    !function(){
-      function t(t){
-        return t.replace(/([A-Z])/g,function(t,e){
-          //return e.toLowerCase()
-        })
-      }
-      function e(){
-        if("horiz"==a)
-          var t=$(window).scrollLeft(),e="left";
-        else
-          var t=$(window).scrollTop(),e="top";
-        var o=0;
-        return f.each(function(r,n){
-          return $(n).offset()[e]>t?!1:void(o=r)
-        }),o
-      }
-      function o(t){
-        var e=document.createElement("a");
-        return e.href="#"+t.id,e.className="anim_swing",Muse.Utils.processHyperlink(e),!1
-      }
-      function r(){
-        var t=e()+1;
-        return t<f.length?o(f[t]):void 0
-      }
-      function n(){
-        var t=e()-1;
-        return t>=0?o(f[t]):void 0
-      }
-      var f=$("a:not([href])"),i="Contactsm".split(/\s*,\s*/),a="vert";
-      if(i&&i.length&&(1!=i.length||""!=i[0])){
-        for(var l in i)i[l]=t(i[l]);
-        f=f.filter(function(t,e){
-          return i.indexOf(e.id)<0?e:null
-        })
-      }
-      var s;
-      switch(a){
-        case"vert":s=function(t,e){return $(t).offset().top-$(e).offset().top};
-          break;
-        case"horiz":s=function(t,e){return $(t).offset().left-$(e).offset().left};
-          break;
-        default:s=function(t,e){return $(t).offset().top==$(e).offset().top?$(t).offset().left-$(e).offset().left:$(t).offset().top-$(e).offset().top}
-      }
-      f.sort(s);
-      var u=!1;
-      $(document).mousewheel(function(t){
-        t.originalEvent||t;
-        if(u||(t.metaKey||t.ctrlKey||t.altKey||t.shiftKey)) {
-          if(u)return!1
+            <a class="anchor_item colelem" id="album"></a>
+            <div class="clearfix ose_pre_init colelem" id="u207-4"><!-- content --><p></p></div>
+            <div class="clearfix ose_pre_init colelem" id="u209-4"><!-- content --><h2>EP - HOKINS</h2></div>
+
+            <a class="anchor_item colelem" id="albumdescription"></a>
+            <div class="clearfix ose_pre_init colelem" id="u292-4"><!-- content sous l'album-->
+              <p>Le premier EP des Hokins</p>
+              <div style="padding-left: 39%;">
+                <p>
+                  <ul>
+                    <li style="text-align: left;">01 - So Easy <i>(03:57)</i></li>
+                    <li style="text-align: left;">02 - WTF <i>(02:55)</i></li>
+                    <li style="text-align: left;">03 - I Want to Do It <i>(03:46)</i></li>
+                    <li style="text-align: left;">04 - No Man's Land <i>(03:29)</i></li>
+                    <li style="text-align: left;">05 - Smell of Coal <i>(03:58)</i></li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="ose_pre_init colelem" id="u313"><!-- simple frame --></div>
+
+            <a class="anchor_item colelem" id="listen"></a>
+            <div class="clearfix ose_pre_init colelem" id="u330-4"><!-- content --><h3>EN ECOUTE</h3></div>
+            <div class="clearfix ose_pre_init colelem" id="u329-4"><!-- content --><p></p></div>
+            <div class="ose_pre_init colelem listen" id="u331">
+              <!-- custom html -->
+              <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/180689781&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+            <div class="ose_pre_init colelem listen" id="u630"><!-- custom html -->
+              <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/100310595&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+            <div class="ose_pre_init colelem listen" id="u634"><!-- custom html -->
+              <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/88593372&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="browser_width grpelem" id="u343-bw">
+        <div id="u343"><!-- group -->
+          <div class="clearfix" id="u343_align_to_page">
+            <a class="anchor_item grpelem" id="video"></a>
+            <div class="clearfix ose_pre_init grpelem" id="u355-4"><!-- content --><h3>HOKINS - Noyade</h3></div>
+          </div>
+        </div>
+      </div>
+      <a class="nonblock nontext anim_swing grpelem" id="u103"
+         href="#album"
+         data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+         data-mu-ie-matrix-dx="-19" data-mu-ie-matrix-dy="-19">
+        <!-- simple frame --></a>
+      <a class="nonblock nontext anim_swing grpelem" id="u353"
+         href="#video"
+         data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+         data-mu-ie-matrix-dx="-19" data-mu-ie-matrix-dy="-19">
+        <!-- simple frame --></a>
+
+      <div class="ose_pre_init grpelem" id="u920"
+           data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=-0.7071,M21=0.7071,M22=0.7071,SizingMethod='auto expand')"
+           data-mu-ie-matrix-dx="-41" data-mu-ie-matrix-dy="-41">
+        <!-- simple frame --></div>
+      <div class="ose_pre_init grpelem" id="u922"
+           data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=-0.7071,M21=0.7071,M22=0.7071,SizingMethod='auto expand')"
+           data-mu-ie-matrix-dx="-41" data-mu-ie-matrix-dy="-41">
+        <!-- simple frame --></div>
+      <div class="rounded-corners ose_pre_init grpelem" id="u283">
+        <!-- simple frame --></div>
+      <!--a class="nonblock nontext anim_swing ose_pre_init grpelem" id="u1008" href="#listen" title="Listen album preview"><!-- simple frame</a> -->
+      <!-- a class="nonblock nontext anim_swing ose_pre_init grpelem" id="u1016" href="#preorder" title="Preorder album"><!-- simple frame </a>-->
+      <div class="clearfix ose_pre_init grpelem" id="u354-4"><!-- content --><p>OFFICIAL VIDEO Live @Toï Toï 2014</p></div>
+    </div>
+    <div class="clearfix colelem" id="pu364"><!-- group -->
+      <div class="browser_width grpelem" id="u364-bw">
+        <div id="u364"><!-- simple frame --></div>
+      </div>
+      <div class="browser_width grpelem" id="u367-bw">
+        <div id="u367"><!-- column -->
+          <div class="clearfix" id="u367_align_to_page">
+
+            <a class="anchor_item colelem" id="reviews"></a>
+            <div class="clearfix ose_pre_init colelem" id="u369-4"><!-- content --><h3>AVIS</h3></div>
+            <div class="clearfix ose_pre_init colelem" id="u368-4"><!-- content --><p>DES EXPERTS ET CRITIQUES MUSIQUE</p></div>
+            <div class="ose_pre_init colelem" id="u467"><!-- simple frame --></div>
+
+            <!--a class="anchor_item colelem" id="preorder"></a>
+            <div class="clearfix ose_pre_init colelem" id="u489-4"><h3>PREORDER ALBUM</h3></div>
+            <div class="clearfix ose_pre_init colelem" id="u488-4"><p>AND GET EXTRA FEATURES</p></div-->
+          </div>
+        </div>
+      </div>
+      <a class="nonblock nontext anim_swing grpelem" id="u365" href="#reviews"
+         data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+         data-mu-ie-matrix-dx="-19" data-mu-ie-matrix-dy="-19">
+        <!-- simple frame --></a>
+
+      <div class="ose_pre_init grpelem" id="u360"><!-- custom html -->
+        <iframe class="actAsDiv" width="780" height="487"
+                src="http://www.youtube.com/embed/_VIRD0cgUE8?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=0&modestbranding=0&start=0&fs=1&iv_load_policy=3&wmode=transparent&rel=0"
+                frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="PamphletWidget clearfix grpelem" id="pamphletu383">
+        <!-- none box -->
+        <div class="popup_anchor" id="u388popup">
+          <div class="ContainerGroup clearfix" id="u388"><!-- stack box -->
+            <div class="Container clearfix grpelem" id="u390"><!-- column -->
+              <div class="clearfix colelem" id="u399-4"><!-- content -->
+                <p>
+                <h3 style="font-weight: bold;">Y AVAIT DE LA « RELEASE PARTY » DANS L’AIR !</h3>
+                <br/>&quot;La Team TRAFALGAR s’est rendue à la « Release Party » de l’EP des HOKINS!
+                <br/>L’Étage Folk organise la soirée et nous donne rendez-vous dans une cour on ne peut plus originale!
+                <br/>Froideur d’un manoir recouvert de graffitis, une sorte de paradis urbain perdu…
+                <br/>A la tombée de la nuit, lorsque les chouettes ont les yeux grand ouverts, les HOKINS ont envoyé leur musique enivrante.
+                <br/>Certains tapaient du pied, d’autres se convulsaient en rythme…
+                <br/>Tous étaient suspendus aux lèvres de cette voix fantasmatique et hallucinés par leur charisme !
+                <br/>Un rappel n’étant pas suffisant, notre équipe n’a pas hésite à repartir avec l’ EP sous le bras.
+                <br/>Merci à l’Étage Folk : l’organisation était sans faille, aux Doorsfall pour leur première partie
+                <br/>et bien évidemment… aux HOKINS, sacré bagou !&quot;
+                </p>
+              </div>
+              <!--div class="clearfix colelem" id="pu401">
+                  <div class="grpelem" id="u401" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=-0.7071,M21=0.7071,M22=0.7071,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-37" data-mu-ie-matrix-dy="-37"></div>
+                  <div class="museBGSize grpelem" id="u402" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=-0.7071,M21=0.7071,M22=0.7071,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-37" data-mu-ie-matrix-dy="-37"></div>
+              </div>-->
+              <div class="clearfix colelem" id="u400-6"><!-- content -->
+                <p>Allison Oswald <span id="u456-2">/</span> <a
+                    href="http://www.trafalgarmagazine.com/evenements/y-avait-de-la-release-party-dans-lair/"
+                    target="_blank  ">WWW.TRAFALGARMAGAZINE.COM</a></p>
+              </div>
+            </div>
+            <div class="Container invi clearfix grpelem" id="u445">
+              <!-- column -->
+              <div class="clearfix colelem" id="u455-4"><!-- content -->
+                <p>
+                <h3 style="font-weight: bold;">HOKINS : LE PUNK QUI DANSE !</h3>
+                <br/>&quot;Les concerts ? Ils ne peuvent pas s’en passer.
+                <br/>Le bonheur et le plaisir qu’ils ont d’être sur scène sont toujours présents, même lorsque les conditions sont difficiles !
+                <br/>Johan se souvient d’une de ces fois où tout ne s’est pas passé comme prévu :
+                <br/><i>« On part à Paris pour un concert, on charge le camion le matin, 7h de route.
+                  <br/>Arrivé à Paris, bouchons. Arrivé dans Paris, bouchons.
+                  <br/>Arrivé sur place, pas le temps de faire des balances.
+                  <br/>On décharge le matos et on se rend compte 15 minutes avant le concert qu’il nous en manque le quart.
+                  <br/>Mais c’était quand même un bon concert ! ».</i>&quot;
+                <br/><span style="text-align: right;">[<a href="http://cafecomptoir.fr/2014/12/18/hokins-le-punk-qui-danse/" target="_blank">Lire la suite</a>]</span>
+                </p>
+              </div>
+              <!--div class="clearfix colelem" id="pu457">
+                  <div class="grpelem" id="u457" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=-0.7071,M21=0.7071,M22=0.7071,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-37" data-mu-ie-matrix-dy="-37"></div>
+                  <div class="museBGSize grpelem" id="u458" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=-0.7071,M21=0.7071,M22=0.7071,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-37" data-mu-ie-matrix-dy="-37"></div>
+              </div-->
+              <div class="clearfix colelem" id="u456-6"><!-- content -->
+                <p><a href="http://cafecomptoir.fr/2014/12/18/hokins-le-punk-qui-danse/" target="_blank  ">CAFECOMPTOIR.FR</a></p>
+              </div>
+            </div>
+            <!--<div class="Container invi clearfix grpelem" id="u451">
+                <div class="clearfix colelem" id="u459-4">
+                    <p>&quot;Du rock’n’roll énergique. Non, Hokins ne propose pas de sauver la planète mais plutôt de la secouer.
+                        <br />Entre mélancolie obscure et rythmes acharnés, la puissance de leur musique fait vibrer les planches de la scène rock lyonnaise.
+                        <br />Né il y a un peu plus d'un an à la suite d’une rencontre au Centre de Formation Professionnel de la Musique de Lyon, les quatre membres de ce groupe ont réalisé une démo et des vidéos auto-produites ainsi que certaines reprises sauce HOKINS.
+                        <br />C’est d’ailleurs à l’occasion d’un cover-vidéo acoustique qu’ils ont pu être repéré et partagé à deux reprises par l’un des groupes phare du rock made in France dont ils s’inspirent : Shaka Ponk. &quot;</p>
+                </div>
+                <!--div class="clearfix colelem" id="pu461">
+                    <div class="grpelem" id="u461" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=-0.7071,M21=0.7071,M22=0.7071,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-37" data-mu-ie-matrix-dy="-37"></div>
+                    <div class="museBGSize grpelem" id="u462" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=-0.7071,M21=0.7071,M22=0.7071,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-37" data-mu-ie-matrix-dy="-37"></div>
+                </div>
+                <div class="clearfix colelem" id="u460-6">
+                    <p>MARK STEPHENS <span id="u460-2">/</span> <a href="http://fr.ulule.com/hokinsofficiel/" target="_blank">FR.ULULE.COM</a></p>
+                </div>
+            </div>
+            <div class="Container invi clearfix grpelem" id="u453">
+                <div class="clearfix colelem" id="u463-4">
+                    <p>&nbsp;Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+                </div>
+                <div class="clearfix colelem" id="pu465">
+                    <div class="grpelem" id="u465" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=-0.7071,M21=0.7071,M22=0.7071,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-37" data-mu-ie-matrix-dy="-37"></div>
+                    <div class="museBGSize grpelem" id="u466" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=-0.7071,M21=0.7071,M22=0.7071,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-37" data-mu-ie-matrix-dy="-37"></div>
+                </div>
+                <div class="clearfix colelem" id="u464-6">
+                    <p>JOHN WILSON <span id="u464-2">/</span> WWW.BEATPORT.COM</p>
+                </div>
+            </div>-->
+          </div>
+        </div>
+        <div class="ThumbGroup clearfix grpelem" id="u384"><!-- none box -->
+          <div class="popup_anchor">
+            <div class="Thumb popup_element review carre" style="left: 0" id="u385"><!-- simple frame --></div>
+          </div>
+          <!--div class="popup_anchor"><div class="Thumb popup_element review carre" style="left:  30px;"  id="u450"></div></div-->
+          <!--div class="popup_anchor"><div class="Thumb popup_element review carre" style="left: 371px;" id="u452"></div></div-->
+          <div class="popup_anchor"><div class="Thumb popup_element review carre" style="left: 401px;"id="u454"><!-- simple frame --></div></div>
+        </div>
+        <div class="popup_anchor"><div class="PamphletPrevButton PamphletLightboxPart popup_element"id="u392"><!-- simple frame --></div></div>
+        <div class="popup_anchor"><div class="PamphletNextButton PamphletLightboxPart popup_element" id="u394"><!-- simple frame --></div></div>
+      </div>
+      <div class="browser_width grpelem" id="u552-bw">
+        <div id="u552"><!-- column -->
+          <div class="clearfix" id="u552_align_to_page">
+            <div class="position_content" id="u552_position_content">
+              <a class="anchor_item colelem" id="about"></a>
+              <div class="clearfix ose_pre_init colelem" id="u555-4"><!-- content --><h3>A PROPOS DU GROUPE</h3></div>
+              <div class="clearfix ose_pre_init colelem" id="u554-4"><!-- content --><p>KIT PRESSE</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="nonblock nontext anim_swing grpelem" id="u553"
+         href="#about"
+         data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+         data-mu-ie-matrix-dx="-19" data-mu-ie-matrix-dy="-19">
+        <!-- simple frame --></a>
+    </div>
+    <div class="clearfix colelem" id="pu903"><!-- group -->
+      <div class="clearfix mse_pre_init" id="u903"><!-- group -->
+        <div class="clearfix grpelem" id="u513"><!-- column -->
+          <div class="clearfix colelem" id="u512-4"><!-- content --><p>REGULAR</p></div>
+          <div class="clearfix colelem" id="u511-4"><!-- content --><p>DOWNLOAD</p></div>
+          <div class="clearfix colelem" id="u508-8"><!-- content --><p>DIGITAL BONUS PACK</p><p>PHOTOS, VIDEOS</p><p>AND MORE</p></div>
+          <a class="nonblock nontext clearfix colelem" id="u507-4" href="https://gumroad.com/l/BDAGO"><!-- content --><p id="u507-2">BUY</p></a>
+        </div>
+        <div class="grpelem" id="u509"
+             data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+             data-mu-ie-matrix-dx="-27" data-mu-ie-matrix-dy="-27">
+          <!-- simple frame --></div>
+        <div class="clearfix grpelem" id="u510-4"><!-- content --><p>$29</p></div>
+      </div>
+      <div class="clearfix mse_pre_init" id="u901"><!-- group -->
+        <div class="clearfix grpelem" id="u496"><!-- column -->
+          <div class="clearfix colelem" id="u497-4"><!-- content --><p>STANDARD</p></div>
+          <div class="clearfix colelem" id="u498-4"><!-- content --><p>DOWNLOAD + CD</p></div>
+          <div class="clearfix colelem" id="u501-8"><!-- content --><p>DIGITAL BONUS PACK</p><p>PHOTOS, VIDEOS</p><p>AND MORE</p></div>
+          <a class="nonblock nontext clearfix colelem" id="u506-4"
+             href="https://gumroad.com/l/BDAGO"><!-- content --><p id="u506-2">BUY</p></a>
+        </div>
+        <div class="grpelem" id="u499"
+             data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+             data-mu-ie-matrix-dx="-27" data-mu-ie-matrix-dy="-27">
+          <!-- simple frame --></div>
+        <div class="clearfix grpelem" id="u503-4"><!-- content --><p>$59</p></div>
+      </div>
+      <div class="clearfix mse_pre_init" id="u902"><!-- group -->
+        <div class="clearfix grpelem" id="u551"><!-- column -->
+          <div class="clearfix colelem" id="u545-4"><!-- content --><p>DELUXE</p></div>
+          <div class="clearfix colelem" id="u546-4"><!-- content --><p>DOWNLOAD + CD + VINYL</p></div>
+          <div class="clearfix colelem" id="u549-8"><!-- content --><p>DIGITAL BONUS PACK</p><p>PHOTOS, VIDEOS</p><p>AND MORE</p></div>
+          <a class="nonblock nontext clearfix colelem" id="u550-4" href="https://gumroad.com/l/BDAGO"><!-- content --><p id="u550-2">BUY</p></a>
+        </div>
+        <div class="grpelem" id="u548"
+             data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+             data-mu-ie-matrix-dx="-27" data-mu-ie-matrix-dy="-27">
+          <!-- simple frame --></div>
+        <div class="clearfix grpelem" id="u547-4"><!-- content --><p>$99</p></div>
+      </div>
+    </div>
+    <div class="clearfix ose_pre_init colelem" id="u556-4"><!-- content -->
+      <p>Du rock’n’roll énergique. Non, Hokins ne propose pas de sauver la planète mais plutôt de la secouer.
+        <br/>Lorsqu’on leur demande comment ils pourraient résumer l’esprit du groupe :
+        <br/>« C’est comme si les Queens of the Stone Age rencontraient Bloc Party ».
+        <br/>Et c’est vrai que le groupe a deux facettes, l’une préhistorique et l’autre plus urbaine.
+        <br/>Imaginez en gros les Pierrafeu découvrant une boite à rythmes ;
+        <br/>cela devrait vous donner une idée assez précise du son façonné par les Hokins.</p>
+    </div>
+    <div class="ose_pre_init colelem" id="u557"><!-- simple frame --></div>
+    <a class="anchor_item colelem" id="photos"></a>
+
+    <div class="clearfix ose_pre_init colelem" id="u560-4"><!-- content -->
+      <h3>PHOTOS</h3>
+    </div>
+    <div class="clearfix ose_pre_init colelem" id="u561-4"><!-- content -->
+      <p>NOS DERNI&Egrave;RES PHOTOS</p>
+    </div>
+    <div class="PamphletWidget clearfix colelem" id="pamphletu562">
+      <!-- Carousel box -->
+      <div class="popup_anchor" id="u563popup">
+        <div class="ContainerGroup clearfix" id="u563"><!-- stack box -->
+          <div class="Container clearfix grpelem carrouselElmt" id="u579"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/FINAL-TRAFALGAR-BD3-800x533.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem" id="u1670-4"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/320563_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/HOKINS2-e1418730457393-500x300.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/HOKINS-FAWL-RUDERLESS.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>BUS PALADIUM - PARIS 2014</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt" id="u1065"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/441311_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem" id="u1671-4"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt" id="u1067"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/607014_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem" id="u1672-4"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt" id="u1069"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/1030537_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem" id="u1673-4"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt" id="u1071"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/2155041_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem" id="u1674-4"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/3546243_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/3770182_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/3829457_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/3928612_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/6510833_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/6525074_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/6624304_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/7548708_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/8234423_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/9122130_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+          <div class="Container invi clearfix grpelem carrouselElmt"
+               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/9212823_orig.jpg') center center no-repeat transparent;">
+            <div class="clearfix grpelem"><p>@TODO</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="ThumbGroup clearfix grpelem" id="u586"><!-- none box -->
+        <div class="popup_anchor"><div class="Thumb popup_element" id="u587"><!-- simple frame --></div></div>
+        <div class="popup_anchor"><div class="Thumb popup_element" id="u1066"><!-- simple frame --></div></div>
+        <div class="popup_anchor"><div class="Thumb popup_element" id="u1068"><!-- simple frame --></div></div>
+        <div class="popup_anchor"><div class="Thumb popup_element" id="u1070"><!-- simple frame --></div></div>
+        <div class="popup_anchor"><div class="Thumb popup_element" id="u1072"><!-- simple frame --></div></div>
+      </div>
+      <div class="popup_anchor">
+        <div class="PamphletPrevButton PamphletLightboxPart popup_element"id="u591"><!-- simple frame --></div>
+      </div>
+      <div class="popup_anchor">
+        <div class="PamphletNextButton PamphletLightboxPart popup_element"id="u592"><!-- simple frame --></div>
+      </div>
+    </div>
+    <div class="clearfix colelem" id="pu593"><!-- group -->
+      <div class="browser_width grpelem" id="u593-bw">
+        <div id="u593"><!-- simple frame --></div>
+      </div>
+      <div class="browser_width grpelem" id="u596-bw">
+        <div id="u596"><!-- simple frame --></div>
+      </div>
+      <div class="browser_width grpelem" id="u676-bw">
+        <div id="u676"><!-- column -->
+          <div class="clearfix" id="u676_align_to_page">
+            <div class="clearfix ose_pre_init colelem" id="u598-4"><!-- content --><h3>PROCHAINES DATES</h3></div>
+            <div class="clearfix ose_pre_init colelem" id="u597-4"><!-- content --><p>TROUVER NOS PROCHAINS SETS</p></div>
+            <div class="ose_pre_init colelem" id="u725"><!-- simple frame --></div>
+
+            <!--a class="anchor_item colelem" id="booking"></a>
+            <div class="clearfix ose_pre_init colelem" id="u727-4"><h3>BOOKING ARTIST</h3></div>
+            <div class="clearfix ose_pre_init colelem" id="u726-4"><p>MAKE AN ENQUIRY</p></div>-->
+
+            <a class="anchor_item colelem" id="contactsm"></a>
+            <div class="ose_pre_init colelem" id="u753"><!-- simple frame --></div>
+
+            <a class="anchor_item colelem" id="contacts"></a>
+            <div class="clearfix ose_pre_init colelem" id="u756-4"><!-- content --><h3>CONTACTS</h3></div>
+            <div class="clearfix ose_pre_init colelem" id="u757-4"><!-- content --><p>SUIVEZ-NOUS</p></div>
+
+            <div class="clearfix colelem" id="pu832-8"><!-- group -->
+              <div class="clearfix ose_pre_init grpelem" id="u832-8">
+                <!-- content -->
+                <p id="u832-2">MANAGER</p>
+                <!--p id="u832-4">Phone: +1 123 456 7890</p-->
+                <p id="u832-6">E-mail: contact.hokins_AT_gmail.com</p>
+              </div>
+              <div class="ose_pre_init grpelem" id="u765"><!-- simple frame --></div>
+              <div class="ose_pre_init grpelem" id="u766"><!-- simple frame --></div>
+              <div class="clearfix ose_pre_init grpelem" id="u890-8">
+                <!-- content -->
+                <p id="u890-2">AGENT</p>
+                <!--p id="u890-4">Phone: +1 123 456 7890</p-->
+                <p id="u890-6">E-mail: booking.hokins_AT_gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="nonblock nontext anim_swing grpelem" id="u594"
+         href="#tourdates"
+         data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+         data-mu-ie-matrix-dx="-19" data-mu-ie-matrix-dy="-19">
+        <!-- simple frame --></a>
+
+      <div class="browser_width grpelem" id="u891-bw">
+        <div id="u891"><!-- column -->
+          <div class="clearfix" id="u891_align_to_page">
+            <div class="clearfix colelem" id="u912-4"><!-- content -->
+              <p>&copy; HOKINS </p>
+            </div>
+            <div class="clearfix colelem" id="u910-9"><!-- content -->
+              <p>Inspired By an Adobe Muse Template by <a class="nonblock"
+                                                          href="http://themeforest.net/user/vinyljunkie?ref=vinyljunkie">Vinyljunkie</a>.
+              </p>
+              <p>All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="nonblock nontext anim_swing grpelem" id="u892" href="#top" title="To the top"
+         data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-0.7071,M12=-0.7071,M21=0.7071,M22=-0.7071,SizingMethod='auto expand')"
+         data-mu-ie-matrix-dx="-19" data-mu-ie-matrix-dy="-19">
+        <!-- simple frame --></a>
+      <!--a class="nonblock nontext ose_pre_init grpelem" id="u767" href="http://instagram.com/tools4dj" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-10" data-mu-ie-matrix-dy="-10"><!-- simple frame </a>-->
+      <a class="nonblock nontext ose_pre_init grpelem" id="u780"
+         href="https://soundcloud.com/hokinsofficial"
+         data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+         data-mu-ie-matrix-dx="-10" data-mu-ie-matrix-dy="-10">
+        <!-- simple frame --></a>
+      <a class="nonblock nontext ose_pre_init grpelem" id="u783"
+         href="https://www.youtube.com/user/hokinsofficiel"
+         data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+         data-mu-ie-matrix-dx="-10" data-mu-ie-matrix-dy="-10">
+        <!-- simple frame --></a>
+      <a class="nonblock nontext ose_pre_init grpelem" id="u781"
+         href="https://www.facebook.com/hokinsofficiel"
+         data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+         data-mu-ie-matrix-dx="-10" data-mu-ie-matrix-dy="-10">
+        <!-- simple frame --></a>
+      <a class="nonblock nontext ose_pre_init grpelem" id="u782"
+         href="https://twitter.com/hokinsofficiel"
+         data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.7071,M12=0.7071,M21=-0.7071,M22=0.7071,SizingMethod='auto expand')"
+         data-mu-ie-matrix-dx="-10" data-mu-ie-matrix-dy="-10">
+        <!-- simple frame --></a>
+      <a class="anchor_item grpelem" id="tourdates"></a>
+      <a class="anchor_item grpelem" id="footer"></a>
+    </div>
+    <div class="clearfix colelem" id="pu881"><!-- group -->
+      <div class="clearfix mse_pre_init" id="u881"><!-- group -->
+        <div class="clearfix grpelem" id="u888"><!-- group -->
+          <div class="clearfix grpelem" id="u884"><!-- group -->
+            <div class="clearfix grpelem" id="u886-4"><p>15</p></div>
+          </div>
+          <div class="clearfix grpelem" id="pu883-4"><!-- column -->
+            <div class="clearfix colelem" id="u883-4"><p>JACK JACK</p></div>
+            <div class="clearfix colelem" id="u885-4"><!-- content -->
+              <p>MJC BRON / PLACE GAILLARD ROMANET 69500 BRON <br/>Tel : 04 78 26 87 25</p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix grpelem" id="u887-4"><p>JAN 15</p></div>
+        <div class="clearfix grpelem more" id="u882-4"><!-- content -->
+          <a href="http://jackjack.fr/concert/hummingbird-hokins-are-you-decent/#groupe2" target="_blank">EN SAVOIR PLUS</a>
+        </div>
+      </div>
+      <!--form class="form-grp clearfix mse_pre_init" id="widgetu735" method="post" enctype="multipart/form-data" action="scripts/form-u735.php">
+          <div class="fld-grp clearfix grpelem" id="widgetu736" data-required="true">
+              <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u739-4"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu736_input" name="custom_U736" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu736_prompt" for="widgetu736_input"><span class="actAsPara">Enter Name</span></label></span>
+          </div>
+          <div class="fld-grp clearfix grpelem" id="widgetu740" data-required="true" data-type="email">
+              <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u741-4"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu740_input" name="Email" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu740_prompt" for="widgetu740_input"><span class="actAsPara">Enter Email</span></label></span>
+          </div>
+          <div class="clearfix grpelem" id="u744-4">
+              <p>Submitting Form...</p>
+          </div>
+          <div class="clearfix grpelem" id="u751-4">
+              <p>The server encountered an error.</p>
+          </div>
+          <div class="clearfix grpelem" id="u745-4">
+              <p>Form received.</p>
+          </div>
+          <input class="submit-btn NoWrap grpelem" id="u750-17" type="submit" value="" tabindex="4"/>
+          <div class="fld-grp clearfix grpelem" id="widgetu746" data-required="false">
+              <span class="fld-textarea actAsDiv clearfix grpelem" id="u749-4"><textarea class="wrapped-input" id="widgetu746_input" name="custom_U746" tabindex="3"></textarea><label class="wrapped-input fld-prompt" id="widgetu746_prompt" for="widgetu746_input"><span class="actAsPara">Enter Your Message</span></label></span>
+          </div>
+      </form>-->
+    </div>
+    <div class="verticalspacer"></div>
+  </div>
+</div>
+<div class="preload_images">
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/menu_032.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/menu_022.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/down_arrow2.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/icon_prelisten-u1872-r-fr.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/icon_preorder-u1873-r-fr.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/slider_trigger_02.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/slider_trigger_03.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/prev_slide02.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/next_slide02.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/slider_trigger_02w.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/slider_trigger_03w.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/slider_prev_02.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/slider_next_02.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/icon_instagram_02.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/icon_soundcloud_02.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/icon_vimeo_02.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/icon_fb_02.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/icon_twitter_02.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/u750-17-r.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/u750-17-m.png" alt=""/>
+  <img class="preload" src="/sites/all/themes/custom/hokins/tpl/img/u750-17-fs.png" alt=""/>
+</div>
+<!-- JS includes -->
+<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/museutils.js"></script>
+<!--<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/jquery.musepolyfill.bgsize.js"></script>-->
+<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/jquery.scrolleffects.js"></script>
+<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/webpro.js"></script>
+<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/musewpslideshow.js"></script>
+<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/jquery.museoverlay.js"></script>
+<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/touchswipe.js"></script>
+<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/jquery.musemenu.js"></script>
+<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/contrib/jquery.watch.js"></script>
+<!-- Other scripts -->
+<!--<script type="text/javascript" src="/sites/all/themes/custom/hokins/tpl/js/custom/common.js"></script>-->
+<script type="text/javascript">
+  !function (a) {
+    "function" == typeof define && define.amd ? define(["jquery"], a) : "object" == typeof exports ? module.exports = a : a(jQuery)
+  }(function (a) {
+    function b(b) {
+      var g = b || window.event, h = i.call(arguments, 1),
+        j = 0,
+        l = 0,
+        m = 0,
+        n = 0,
+        o = 0,
+        p = 0;
+      if (b = a.event.fix(g), b.type = "mousewheel", "detail"in g && (m = -1 * g.detail), "wheelDelta"in g && (m = g.wheelDelta), "wheelDeltaY"in g && (m = g.wheelDeltaY), "wheelDeltaX"in g && (l = -1 * g.wheelDeltaX), "axis"in g && g.axis === g.HORIZONTAL_AXIS && (l = -1 * m, m = 0), j = 0 === m ? l : m, "deltaY"in g && (m = -1 * g.deltaY, j = m), "deltaX"in g && (l = g.deltaX, 0 === m && (j = -1 * l)), 0 !== m || 0 !== l) {
+        if (1 === g.deltaMode) {
+          var q = a.data(this, "mousewheel-line-height");
+          j *= q, m *= q, l *= q
+        } else if (2 === g.deltaMode) {
+          var r = a.data(this, "mousewheel-page-height");
+          j *= r, m *= r, l *= r
         }
-        else{
-          if(t.deltaY<0||t.deltaX>0){
-            {
-              var o=e();
-              f[o+1],"horiz"==a?$(window).scollLeft():$(window).scrollTop(), "horiz"==a?window.innerWidth:window.innerHeight,t.deltaY<0?t.deltaY*t.deltaFactor*-1:t.deltaX*t.deltaFactor
-            }
-            return u=true,setTimeout(function(){u=!1},1000),r()
-          }
-          if(t.deltaY>0||t.deltaX<0){
-            {
-              var o=e();
-              f[o],
-                "horiz"==a?$(window).scollLeft():$(window).scrollTop(),t.deltaY>0?t.deltaY*t.deltaFactor*-1:t.deltaX*t.deltaFactor
-            }
-            return u=true,
-              setTimeout(function(){u=!1},1000),n()
-          }
+        if (n = Math.max(Math.abs(m), Math.abs(l)), (!f || f > n) && (f = n, d(g, n) && (f /= 40)), d(g, n) && (j /= 40, l /= 40, m /= 40), j = Math[j >= 1 ? "floor" : "ceil"](j / f), l = Math[l >= 1 ? "floor" : "ceil"](l / f), m = Math[m >= 1 ? "floor" : "ceil"](m / f), k.settings.normalizeOffset && this.getBoundingClientRect) {
+          var s = this.getBoundingClientRect();
+          o = b.clientX - s.left, p = b.clientY - s.top
         }
+        return b.deltaX = l, b.deltaY = m, b.deltaFactor = f, b.offsetX = o, b.offsetY = p, b.deltaMode = 0, h.unshift(b, j, l, m), e && clearTimeout(e), e = setTimeout(c, 200), (a.event.dispatch || a.event.handle).apply(this, h)
+      }
+    }
+
+    function c() {
+      f = null
+    }
+
+    function d(a, b) {
+      return k.settings.adjustOldDeltas && "mousewheel" === a.type && b % 120 === 0
+    }
+
+    var e, f, g = ["wheel", "mousewheel", "DOMMouseScroll", "MozMousePixelScroll"], h = "onwheel"in document || document.documentMode >= 9 ? ["wheel"] : ["mousewheel", "DomMouseScroll", "MozMousePixelScroll"], i = Array.prototype.slice;
+    if (a.event.fixHooks)for (var j = g.length; j;)a.event.fixHooks[g[--j]] = a.event.mouseHooks;
+    var k = a.event.special.mousewheel = {
+      version: "3.1.12",
+      setup: function () {
+        if (this.addEventListener)for (var c = h.length; c;)this.addEventListener(h[--c], b, !1); else this.onmousewheel = b;
+        a.data(this, "mousewheel-line-height", k.getLineHeight(this)), a.data(this, "mousewheel-page-height", k.getPageHeight(this))
+      },
+      teardown: function () {
+        if (this.removeEventListener)for (var c = h.length; c;)this.removeEventListener(h[--c], b, !1); else this.onmousewheel = null;
+        a.removeData(this, "mousewheel-line-height"), a.removeData(this, "mousewheel-page-height")
+      },
+      getLineHeight: function (b) {
+        var c = a(b), d = c["offsetParent"in a.fn ? "offsetParent" : "parent"]();
+        return d.length || (d = a("body")), parseInt(d.css("fontSize"), 10) || parseInt(c.css("fontSize"), 10) || 16
+      },
+      getPageHeight: function (b) {
+        return a(b).height()
+      },
+      settings: {adjustOldDeltas: !0, normalizeOffset: !0}
+    };
+    a.fn.extend({
+      mousewheel: function (a) {
+        return a ? this.bind("mousewheel", a) : this.trigger("mousewheel")
+      }, unmousewheel: function (a) {
+        return this.unbind("mousewheel", a)
+      }
+    })
+  });
+</script>
+<script type="text/javascript">
+  !function () {
+    function t(t) {
+      return t.replace(/([A-Z])/g, function (t, e) {
+        return e.toLowerCase()
       })
-    }();
-  </script>
+    }
 
+    function e() {
+      if ("horiz" == a) {
+        var t = $(window).scrollLeft(), e = "left";
+      }
+      else {
+        var t = $(window).scrollTop(), e = "top";
+      }
+      var o = 0;
+      return f.each(function (r, n) {
+        return $(n).offset()[e] > t ? !1 : void(o = r)
+      }), o
+    }
+
+    function o(t) {
+      var e = document.createElement("a");
+      return e.href = "#" + t.id, e.className = "anim_swing", Muse.Utils.processHyperlink(e), !1
+    }
+
+    function r() {
+      var t = e() + 1;
+      return t < f.length ? o(f[t]) : void 0
+    }
+
+    function n() {
+      var t = e() - 1;
+      return t >= 0 ? o(f[t]) : void 0
+    }
+
+    var f = $("a:not([href])"), i = "Contactsm".split(/\s*,\s*/), a = "vert";
+    if (i && i.length && (1 != i.length || "" != i[0])) {
+      for (var l in i)i[l] = t(i[l]);
+      f = f.filter(function (t, e) {
+        return i.indexOf(e.id) < 0 ? e : null
+      })
+    }
+    var s;
+    switch (a) {
+      case"vert":
+        s = function (t, e) {
+          return $(t).offset().top - $(e).offset().top
+        };
+        break;
+      case"horiz":
+        s = function (t, e) {
+          return $(t).offset().left - $(e).offset().left
+        };
+        break;
+      default:
+        s = function (t, e) {
+          return $(t).offset().top == $(e).offset().top ? $(t).offset().left - $(e).offset().left : $(t).offset().top - $(e).offset().top
+        }
+    }
+    f.sort(s);
+    var u = !1;
+    $(document).mousewheel(function (t) {
+      t.originalEvent || t;
+      if (u || (t.metaKey || t.ctrlKey || t.altKey || t.shiftKey)) {
+        if (u)return !1
+      } else {
+        if (t.deltaY < 0 || t.deltaX > 0) {
+          {
+            var o = e();
+            f[o + 1], "horiz" == a ? $(window).scollLeft() : $(window).scrollTop(), "horiz" == a ? window.innerWidth : window.innerHeight, t.deltaY < 0 ? t.deltaY * t.deltaFactor * -1 : t.deltaX * t.deltaFactor
+          }
+          return u = true, setTimeout(function () {
+            u = !1
+          }, 1000), r()
+        }
+        if (t.deltaY > 0 || t.deltaX < 0) {
+          {
+            var o = e();
+            f[o], "horiz" == a ? $(window).scollLeft() : $(window).scrollTop(), t.deltaY > 0 ? t.deltaY * t.deltaFactor * -1 : t.deltaX * t.deltaFactor
+          }
+          return u = true, setTimeout(function () {
+            u = !1
+          }, 1000), n()
+        }
+      }
+    })
+  }();
+</script>
 </body>
 </html>
