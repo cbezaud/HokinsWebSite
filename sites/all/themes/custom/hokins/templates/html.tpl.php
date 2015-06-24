@@ -7,29 +7,23 @@
  * @see https://drupal.org/node/1728208
  */
 ?><!DOCTYPE html>
-<!--[if IEMobile 7]>
-<html class="html iem7" <?php print $html_attributes; ?>><![endif]-->
-<!--[if lte IE 6]>
-<html class="html lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>><![endif]-->
-<!--[if (IE 7)&(!IEMobile)]>
-<html class="html lt-ie9 lt-ie8" <?php print $html_attributes; ?>><![endif]-->
-<!--[if IE 8]>
-<html class="html lt-ie9" <?php print $html_attributes; ?>><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
 <html class="html" <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 <head>
     <?php print $head; ?>
-    <title><?php print $head_title; ?></title>
+    <title>HOKINS &#45; EP Release</title>
 
     <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="description" content="EP Release promo website"/>
+    <meta name="keywords" content="Hokins, rock, punk, website, music, track, single, landing, one page"/>
+    <meta name="generator" content="2014.2.1.284"/>
 
-    <?php print $styles; ?>
-
+<!--    <link rel="shortcut icon" href="/sites/all/themes/custom/hokins/tpl/img/home-favicon.ico"/>-->
 
     <script type="text/javascript">
         if (typeof Muse == "undefined") window.Muse = {};
         window.Muse.assets = {
-            "required": ["jquery-1.8.3.min.js", "museutils.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.scrolleffects.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "jquery.musemenu.js", "museredirect.js", "index.css"],
+            "required": ["jquery-1.8.3.min.js", "museutils.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.scrolleffects.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "jquery.musemenu.js", "museredirect.js"],
             "outOfDate": []
         };
     </script>
@@ -40,25 +34,18 @@
         //Muse.Redirect.redirect('desktop', 'tablet/index.php', 'phone/index.php', '');
     </script>
 
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-    <meta name="description" content="EP Release promo website"/>
-    <meta name="keywords" content="Hokins, rock, punk, website, music, track, single, landing, one page"/>
-    <meta name="generator" content="2014.2.1.284"/>
-
-    <link rel="shortcut icon" href="/sites/all/themes/custom/hokins/tpl/img/home-favicon.ico?424855497"/>
-
-    <title>HOKINS &#45; EP Release</title>
-
     <!--link media="only screen and (max-device-width: 370px)" rel="alternate" href="http://www.tools4dj.ru/phone/index.php"/>
     <link media="only screen and (max-device-width: 960px)" rel="alternate" href="http://www.tools4dj.ru/tablet/index.php"/-->
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/sites/all/themes/custom/hokins/tpl/css/site_global.css?3968235388"/>
-    <link rel="stylesheet" type="text/css" href="/sites/all/themes/custom/hokins/tpl/css/index.css?314114930" id="pagesheet"/>
+    <?php print $styles; ?>
+    <link rel="stylesheet" type="text/css" href="/sites/all/themes/custom/hokins/tpl/css/site_global.css?379738519"/>
+    <link rel="stylesheet" type="text/css" href="/sites/all/themes/custom/hokins/tpl/css/index.css?379738519" id="pagesheet"/>
 
     <!--[if lt IE 9]>
     <link rel="stylesheet" type="text/css" href="/sites/all/themes/custom/hokins/tpl/css/iefonts_index.css?379738519"/>
     <![endif]-->
+
     <!-- Other scripts -->
     <script type="text/javascript">
         document.documentElement.className += ' js';
@@ -84,8 +71,9 @@
         if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
     </script>
     <script type="text/javascript">
-        window.jQuery || document.write('\x3Cscript src="./tpl/js/contrib/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+        window.jQuery || document.write('\x3Cscript src="/sites/all/themes/custom/hokins/tpl/js/contrib/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
     </script>
+
     <script src="/sites/all/themes/custom/hokins/tpl/js/contrib/museutils.js" type="text/javascript"></script>
     <script src="/sites/all/themes/custom/hokins/tpl/js/contrib/jquery.musepolyfill.bgsize.js" type="text/javascript"></script>
     <script src="/sites/all/themes/custom/hokins/tpl/js/contrib/jquery.scrolleffects.js" type="text/javascript"></script>

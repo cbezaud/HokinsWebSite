@@ -93,8 +93,8 @@ try {
     $('#u329-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,1510],"opacity":0},{"in":[1510,1510],"opacity":100},{"fade":50,"in":[1510,Infinity],"opacity":100}]);
     // SoundCloud
     $('#u331').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,1610],"opacity":0},{"in":[1610,1610],"opacity":100},{"fade":50,"in":[1610,Infinity],"opacity":100}]);
-    $('#u630').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,1796.95],"opacity":0},{"in":[1796.95,1796.95],"opacity":100},{"fade":50,"in":[1796.95,Infinity],"opacity":100}]);
-    $('#u634').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,1984.95],"opacity":0},{"in":[1984.95,1984.95],"opacity":100},{"fade":50,"in":[1984.95,Infinity],"opacity":100}]);
+    $('#u630').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,1610],"opacity":0},{"in":[1610,1610],"opacity":100},{"fade":50,"in":[1610,Infinity],"opacity":100}]);
+    $('#u634').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,1610],"opacity":0},{"in":[1610,1610],"opacity":100},{"fade":50,"in":[1610,Infinity],"opacity":100}]);
 
     // Video
     $('#u355-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,2486.02],"opacity":0},{"in":[2486.02,2486.02],"opacity":100},{"fade":50,"in":[2486.02,Infinity],"opacity":100}]);
@@ -154,7 +154,6 @@ try {
     //$('#u726-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,7686.88],"opacity":0},{"in":[7686.88,7686.88],"opacity":100},{"fade":50,"in":[7686.88,Infinity],"opacity":100}]);
 
     // Contact
-    $('#u753').registerOpacityScrollEffect([{"fade":100,"in":[-Infinity,8174.4],"opacity":0},{"in":[8174.4,8174.4],"opacity":100},{"fade":50,"in":[8174.4,Infinity],"opacity":100}]);
     $('#u756-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8362.03],"opacity":0},{"in":[8362.03,8362.03],"opacity":100},{"fade":50,"in":[8362.03,Infinity],"opacity":100}]);
     $('#u757-4').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8412.03],"opacity":0},{"in":[8412.03,8412.03],"opacity":100},{"fade":50,"in":[8412.03,Infinity],"opacity":100}]);
     $('#u832-8').registerOpacityScrollEffect([{"fade":50,"in":[-Infinity,8419],"opacity":0},{"in":[8419,8419],"opacity":100},{"fade":50,"in":[8419,Infinity],"opacity":100}]);

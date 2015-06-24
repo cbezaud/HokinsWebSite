@@ -610,8 +610,7 @@
                style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/HOKINS2-e1418730457393-500x300.jpg') center center no-repeat transparent;">
             <div class="clearfix grpelem"><p>@TODO</p></div>
           </div>
-          <div class="Container invi clearfix grpelem carrouselElmt"
-               style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/HOKINS-FAWL-RUDERLESS.jpg') center center no-repeat transparent;">
+          <div class="Container invi clearfix grpelem carrouselElmt" style="background: url('/sites/all/themes/custom/hokins/tpl/img/materials/carrousel/HOKINS-FAWL-RUDERLESS.jpg') center center no-repeat transparent;">
             <div class="clearfix grpelem"><p>BUS PALADIUM - PARIS 2014</p></div>
           </div>
           <div class="Container invi clearfix grpelem carrouselElmt" id="u1065"
@@ -945,6 +944,7 @@
               <span class="fld-textarea actAsDiv clearfix grpelem" id="u749-4"><textarea class="wrapped-input" id="widgetu746_input" name="custom_U746" tabindex="3"></textarea><label class="wrapped-input fld-prompt" id="widgetu746_prompt" for="widgetu746_input"><span class="actAsPara">Enter Your Message</span></label></span>
           </div>
       </form>-->
+      <?php print render($page['content']); ?>
     </div>
     <div class="verticalspacer"></div>
   </div>
