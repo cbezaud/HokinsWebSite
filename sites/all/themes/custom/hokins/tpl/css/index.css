@@ -1576,7 +1576,7 @@
 	border-style: none;
 	border-color: transparent;
 	padding-bottom: 20px;
-	background: transparent url("../img/border02.png") no-repeat center top;
+	/*background: transparent url("../img/border02.png") no-repeat center top;*/
 }
 
 #video

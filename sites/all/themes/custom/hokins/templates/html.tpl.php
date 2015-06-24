@@ -63,15 +63,42 @@
 
 <div class="clearfix" id="page"><!-- column -->
   <div class="position_content" id="page_position_content">
-    <a class="anchor_item colelem" id="top"></a>
-    <div class="clearfix mse_pre_init" id="u93-4"><!-- content -->
-      <p>Site Officiel des</p>
+    <div style="display: block;">
+      <div class="browser_width grpelem" id="u343-bw">
+        <div id="u343"><!-- group -->
+          <div class="clearfix" id="u343_align_to_page">
+            <a class="anchor_item colelem" id="top"></a>
+            <div class="clearfix ose_pre_init grpelem" id="u93-4"><!-- content --><p>Site Officiel des</p></div>
+            <div class="clearfix ose_pre_init" id="u81-4"><!-- content --><h1 style="display: none;">HOKINS</h1></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix ose_pre_init" id=""><!-- content -->
+        <p></p>
+      </div>
+      <div class="colelem" id="u616"><!-- custom html --></div>
+
+      <div class="_mse_pre_init" id="u96"><!-- simple frame --></div>
+
+
+      <div class="clearfix _mse_pre_init" id="u185-17"><!--  Menu top left -->
+        <p><a class="nonblock anim_swing" href="#album">EP</a></p>
+        <p><a class="nonblock anim_swing" href="#listen">EN ECOUTE</a> </p>
+        <p><a class="nonblock anim_swing" href="#video">VIDEO CLIP</a> </p>
+        <p><a class="nonblock anim_swing" href="#reviews">AVIS</a></p>
+        <!--p><a class="nonblock anim_swing" href="#preorder">PREORDER</a></p-->
+      </div>
+      <div class="clearfix _mse_pre_init" id="u187-17"><!--  Menu top right -->
+        <p><a class="nonblock anim_swing" href="#about"><span id="u187">A PROPOS</span></a> </p>
+        <p><a class="nonblock anim_swing" href="#photos"><span id="u187-4">&nbsp;PHOTOS</span></a></p>
+        <p><a class="nonblock anim_swing" href="#tourdates"><span id="u187-7">DATES</span></a></p>
+        <!--p><a class="nonblock anim_swing" href="#booking"><span id="u187-10">BOOKING</span></a></p-->
+        <p><a class="nonblock anim_swing" href="#contacts"><span id="u187-13">CONTACTS</span></a></p>
+      </div>
+
     </div>
-    <div class="colelem" id="u616"><!-- custom html --></div>
-    <div class="clearfix mse_pre_init" id="u81-4"><!-- content -->
-      <h1 style="display: none;">HOKINS</h1>
-    </div>
-    <div class="mse_pre_init" id="u96"><!-- simple frame --></div>
+
     <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1447">
       <!-- none box -->
       <div class="ThumbGroup clearfix grpelem" id="u1448"><!-- none box -->
@@ -152,20 +179,7 @@
         </div>
       </div>
     </div>
-    <div class="clearfix mse_pre_init" id="u185-17"><!--  Menu top left -->
-      <p><a class="nonblock anim_swing" href="#album">EP</a></p>
-      <p><a class="nonblock anim_swing" href="#listen">EN ECOUTE</a> </p>
-      <p><a class="nonblock anim_swing" href="#video">VIDEO CLIP</a> </p>
-      <p><a class="nonblock anim_swing" href="#reviews">AVIS</a></p>
-      <!--p><a class="nonblock anim_swing" href="#preorder">PREORDER</a></p-->
-    </div>
-    <div class="clearfix mse_pre_init" id="u187-17"><!--  Menu top right -->
-      <p><a class="nonblock anim_swing" href="#about"><span id="u187">A PROPOS</span></a> </p>
-      <p><a class="nonblock anim_swing" href="#photos"><span id="u187-4">&nbsp;PHOTOS</span></a></p>
-      <p><a class="nonblock anim_swing" href="#tourdates"><span id="u187-7">DATES</span></a></p>
-      <!--p><a class="nonblock anim_swing" href="#booking"><span id="u187-10">BOOKING</span></a></p-->
-      <p><a class="nonblock anim_swing" href="#contacts"><span id="u187-13">CONTACTS</span></a></p>
-    </div>
+
     <div class="PamphletWidget clearfix pinned-colelem" id="pamphletu1483"><!-- Video -->
       <div class="ThumbGroup clearfix grpelem" id="u1486"><!-- none box -->
         <div class="popup_anchor">
@@ -470,9 +484,7 @@
           </div>
         </div>
         <div class="ThumbGroup clearfix grpelem" id="u384"><!-- none box -->
-          <div class="popup_anchor">
-            <div class="Thumb popup_element review carre" style="left: 0" id="u385"><!-- simple frame --></div>
-          </div>
+          <div class="popup_anchor"><div class="Thumb popup_element review carre wp-tab-active PamphletThumbSelected" style="left: 0" id="u385"><!-- simple frame --></div></div>
           <!--div class="popup_anchor"><div class="Thumb popup_element review carre" style="left:  30px;"  id="u450"></div></div-->
           <!--div class="popup_anchor"><div class="Thumb popup_element review carre" style="left: 371px;" id="u452"></div></div-->
           <div class="popup_anchor"><div class="Thumb popup_element review carre" style="left: 401px;"id="u454"><!-- simple frame --></div></div>
@@ -498,7 +510,7 @@
         <!-- simple frame --></a>
     </div>
     <div class="clearfix colelem" id="pu903"><!-- group -->
-      <div class="clearfix mse_pre_init" id="u903"><!-- group -->
+      <div class="clearfix _mse_pre_init" id="u903"><!-- group -->
         <div class="clearfix grpelem" id="u513"><!-- column -->
           <div class="clearfix colelem" id="u512-4"><!-- content --><p>REGULAR</p></div>
           <div class="clearfix colelem" id="u511-4"><!-- content --><p>DOWNLOAD</p></div>
@@ -511,7 +523,7 @@
           <!-- simple frame --></div>
         <div class="clearfix grpelem" id="u510-4"><!-- content --><p>$29</p></div>
       </div>
-      <div class="clearfix mse_pre_init" id="u901"><!-- group -->
+      <div class="clearfix _mse_pre_init" id="u901"><!-- group -->
         <div class="clearfix grpelem" id="u496"><!-- column -->
           <div class="clearfix colelem" id="u497-4"><!-- content --><p>STANDARD</p></div>
           <div class="clearfix colelem" id="u498-4"><!-- content --><p>DOWNLOAD + CD</p></div>
@@ -525,7 +537,7 @@
           <!-- simple frame --></div>
         <div class="clearfix grpelem" id="u503-4"><!-- content --><p>$59</p></div>
       </div>
-      <div class="clearfix mse_pre_init" id="u902"><!-- group -->
+      <div class="clearfix _mse_pre_init" id="u902"><!-- group -->
         <div class="clearfix grpelem" id="u551"><!-- column -->
           <div class="clearfix colelem" id="u545-4"><!-- content --><p>DELUXE</p></div>
           <div class="clearfix colelem" id="u546-4"><!-- content --><p>DOWNLOAD + CD + VINYL</p></div>
@@ -746,7 +758,7 @@
       <a class="anchor_item grpelem" id="footer"></a>
     </div>
     <div class="clearfix colelem" id="pu881"><!-- group -->
-      <div class="clearfix mse_pre_init" id="u881"><!-- group -->
+      <div class="clearfix _mse_pre_init" id="u881"><!-- group -->
         <div class="clearfix grpelem" id="u888"><!-- group -->
           <div class="clearfix grpelem" id="u884"><!-- group -->
             <div class="clearfix grpelem" id="u886-4"><p>15</p></div>
@@ -978,6 +990,70 @@
       }
     })
   }();
+</script>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+    jQuery('.PamphletNextButton.popup_element').live('click', function(){
+      var comp = jQuery(this).parents('.PamphletWidget');
+      var ctn = jQuery(comp).find('div.ContainerGroup');
+      var puces = jQuery(comp).find('div.ThumbGroup div.popup_element');
+      var elt = jQuery(ctn).find('> div:not(div.invi)');
+      jQuery(elt).addClass('invi');
+      jQuery(elt).next().removeClass('invi');
+      if(jQuery(ctn).find('> div:not(div.invi)').length == 0){
+        jQuery(ctn).find('> div:first').removeClass('invi');
+      }
+
+      var puceFound = false;
+      jQuery(puces).each(function(){
+        if (puceFound === true) {
+          jQuery(this).addClass('PamphletThumbSelected').addClass('wp-tab-active');
+          puceFound = false;
+        }
+        else if ( jQuery(this).hasClass('PamphletThumbSelected') ) {
+          puceFound = true;
+          jQuery(this).removeClass('PamphletThumbSelected').removeClass('wp-tab-active');
+        }
+      });
+      if ( jQuery(comp).find('div.ThumbGroup div.PamphletThumbSelected').length === 0) {
+        jQuery(puces).first().addClass('PamphletThumbSelected').addClass('wp-tab-active');
+      }
+
+    });
+    jQuery('.PamphletPrevButton.popup_element').live('click', function(){
+      var comp = jQuery(this).parents('.PamphletWidget');
+      var ctn = jQuery(comp).find('div.ContainerGroup');
+      var puces = jQuery(comp).find('div.ThumbGroup div.popup_element');
+      var elt = jQuery(ctn).find('div:not(div.invi)');
+
+      // BUG !!!
+      jQuery(elt).addClass('invi');
+      jQuery(elt).prev().removeClass('invi');
+      if(jQuery(ctn).find('> div:not(div.invi)').length == 0){
+        jQuery(ctn).find('> div:last').removeClass('invi');
+      }
+
+      var puceFound = false;
+      var iteratorFound = false;
+      jQuery(puces).each(function(iterator){
+        if ( jQuery(this).hasClass('PamphletThumbSelected') ) {
+          iteratorFound = iterator;
+          jQuery(this).removeClass('PamphletThumbSelected').removeClass('wp-tab-active');
+        }
+      });
+      if (iteratorFound !== false && iteratorFound !== 0) {
+        iteratorFound--;
+        var puceSelected = jQuery(puces)[iteratorFound];
+        jQuery(puceSelected).addClass('PamphletThumbSelected').addClass('wp-tab-active');
+      }
+      else if(iteratorFound === 0) {
+        jQuery(puces).last().addClass('PamphletThumbSelected').addClass('wp-tab-active');
+      }
+
+
+    });
+  });
+
 </script>
 </body>
 </html>
