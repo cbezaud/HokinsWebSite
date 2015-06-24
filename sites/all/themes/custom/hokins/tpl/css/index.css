@@ -6,7 +6,7 @@
 
 .html
 {
-	background: #E4E4E4 url("../img/background3.jpg") no-repeat center center fixed;
+	background: #E4E4E4 url("../img/background4.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
 
@@ -94,7 +94,8 @@
 	top: 109px;
 	left: 104px;
 	/*background: transparent url("../img/artist.png") no-repeat center top;*/
-	background: transparent url("../img/materials/Logo358x202.png") no-repeat center top;
+	/*background: transparent url("../img/materials/Logo358x202.png") no-repeat center top;*/
+	background: transparent url("../img/materials/Logo358x149.png") no-repeat center top;
 }
 
 #pamphletu1447
@@ -1576,7 +1577,7 @@
 	border-style: none;
 	border-color: transparent;
 	padding-bottom: 20px;
-	/*background: transparent url("../img/border02.png") no-repeat center top;*/
+	background: transparent url("../img/border02.png") no-repeat center top;
 }
 
 #video
@@ -3613,12 +3614,12 @@
 	background: #212123 url("../img/icon_twitter_02.png") no-repeat center center;
 }
 
-/*.js #u207-4.ose_pre_init,.js #u209-4.ose_pre_init,.js #u292-4.ose_pre_init,.js #u313.ose_pre_init,.js #u330-4.ose_pre_init,.js #u329-4.ose_pre_init,.js #u331.ose_pre_init,.js #u630.ose_pre_init,.js #u634.ose_pre_init,.js #u355-4.ose_pre_init,.js #u920.ose_pre_init,.js #u922.ose_pre_init,.js #u283.ose_pre_init,.js #u1008.ose_pre_init,.js #u1016.ose_pre_init,.js #u354-4.ose_pre_init,.js #u369-4.ose_pre_init,.js #u368-4.ose_pre_init,.js #u467.ose_pre_init,.js #u489-4.ose_pre_init,.js #u488-4.ose_pre_init,.js #u360.ose_pre_init,.js #u555-4.ose_pre_init,.js #u554-4.ose_pre_init,.js #u556-4.ose_pre_init,.js #u557.ose_pre_init,.js #u560-4.ose_pre_init,.js #u561-4.ose_pre_init,.js #u598-4.ose_pre_init,.js #u597-4.ose_pre_init,.js #u725.ose_pre_init,.js #u727-4.ose_pre_init,.js #u726-4.ose_pre_init,.js #u753.ose_pre_init,.js #u756-4.ose_pre_init,.js #u757-4.ose_pre_init,.js #u832-8.ose_pre_init,.js #u765.ose_pre_init,.js #u766.ose_pre_init,.js #u890-8.ose_pre_init,.js #u767.ose_pre_init,.js #u780.ose_pre_init,.js #u783.ose_pre_init,.js #u781.ose_pre_init,.js #u782.ose_pre_init
+.js #u207-4.ose_pre_init,.js #u209-4.ose_pre_init,.js #u292-4.ose_pre_init,.js #u313.ose_pre_init,.js #u330-4.ose_pre_init,.js #u329-4.ose_pre_init,.js #u331.ose_pre_init,.js #u630.ose_pre_init,.js #u634.ose_pre_init,.js #u355-4.ose_pre_init,.js #u920.ose_pre_init,.js #u922.ose_pre_init,.js #u283.ose_pre_init,.js #u1008.ose_pre_init,.js #u1016.ose_pre_init,.js #u354-4.ose_pre_init,.js #u369-4.ose_pre_init,.js #u368-4.ose_pre_init,.js #u467.ose_pre_init,.js #u489-4.ose_pre_init,.js #u488-4.ose_pre_init,.js #u360.ose_pre_init,.js #u555-4.ose_pre_init,.js #u554-4.ose_pre_init,.js #u556-4.ose_pre_init,.js #u557.ose_pre_init,.js #u560-4.ose_pre_init,.js #u561-4.ose_pre_init,.js #u598-4.ose_pre_init,.js #u597-4.ose_pre_init,.js #u725.ose_pre_init,.js #u727-4.ose_pre_init,.js #u726-4.ose_pre_init,.js #u753.ose_pre_init,.js #u756-4.ose_pre_init,.js #u757-4.ose_pre_init,.js #u832-8.ose_pre_init,.js #u765.ose_pre_init,.js #u766.ose_pre_init,.js #u890-8.ose_pre_init,.js #u767.ose_pre_init,.js #u780.ose_pre_init,.js #u783.ose_pre_init,.js #u781.ose_pre_init,.js #u782.ose_pre_init
 {
 	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
-}*/
+}
 
 #tourdates
 {
@@ -3646,7 +3647,7 @@
 	margin-top: -2204px;
 }
 
-#u881
+#u881_1, #u881_2, #u881_3, #u881_4, #u881_5, #u881_6, #u881_7
 {
 	z-index: 414;
 	width: 780px;

@@ -76,6 +76,7 @@ scripts[] = tpl/js/contrib/jquery.museoverlay.js
 scripts[] = tpl/js/contrib/touchswipe.js
 scripts[] = tpl/js/contrib/jquery.musemenu.js
 scripts[] = tpl/js/contrib/jquery.watch.js
+
 scripts[] = tpl/js/custom/common.js
 scripts[] = tpl/js/contrib/jquery.mousewheel.min.js
 
