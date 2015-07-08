@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Hokins_photo feature.
+ */
+
+include_once 'hokins_photo.features.inc';

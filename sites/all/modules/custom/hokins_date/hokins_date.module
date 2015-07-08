@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the hokins_date feature.
+ */
+
+include_once 'hokins_date.features.inc';
