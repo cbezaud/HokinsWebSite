@@ -123,7 +123,7 @@
               <div class="zone-body">
                 <div class="media">
                   <div class="img-wrapper">
-                    <img src="/<?php print path_to_theme(); ?>/tpl/img/medias/albums/HOKINS_EPochette.jpg" alt="EP - Hokins" />
+                    <img src="/<?php print path_to_theme(); ?>/tp/img/medias/albums/HOKINS_EPochette.jpg" alt="EP - Hokins" />
                   </div>
                   <div class="media-body">
                     <h2>Le premier EP des Hokins</h2>
@@ -182,59 +182,7 @@
 
           <!-- Section: Avis -->
           <section class="z-avis zone bg" id="s-avis">
-            <div class="content-wrapper">
-              <header>
-                <h1 class="title">Avis</h1>
-                <span class="h2">Des experts et critiques Musique</span>
-              </header>
-
-              <div class="zone-body">
-                <article class="slide">
-                  <h2>Y AVAIT DE LA « RELEASE PARTY » DANS L'AIR !</h2>
-
-                  <blockquote>
-                    <div class="cms">
-                      <p>
-                        La Team TRAFALGAR s'est rendue à la "Release Party" de l'EP des HOKINS!
-                        L'Étage Folk organise la soirée et nous donne rendez-vous dans une cour on ne peut plus originale!
-                        Froideur d'un manoir recouvert de graffitis, une sorte de paradis urbain perdu...
-                        A la tombée de la nuit, lorsque les chouettes ont les yeux grand ouverts, les HOKINS ont envoyé leur musique enivrante.
-                        Certains tapaient du pied, d'autres se convulsaient en rythme...
-                        Tous étaient suspendus aux lèvres de cette voix fantasmatique et hallucinés par leur charisme !
-                        Un rappel n'étant pas suffisant, notre équipe n'a pas hésite à repartir avec l' EP sous le bras.
-                        Merci à l'Étage Folk : l'organisation était sans faille, aux Doorsfall pour leur première partie
-                        et bien évidemment… aux HOKINS, sacré bagou !
-                      </p>
-                    </div>
-                    <footer>
-                      <a href="http://www.trafalgarmagazine.com"><strong>Allison Oswald</strong> / WWW.TRAFALGARMAGAZINE.COM</a>
-                    </footer>
-                  </blockquote>
-                </article>
-
-                <article class="slide">
-                  <h2>TITRE ARTICLE</h2>
-
-                  <blockquote>
-                    <div class="cms">
-                      <p>
-                        Les concerts ? Ils ne peuvent pas s’en passer.
-                        Le bonheur et le plaisir qu’ils ont d’être sur scène sont toujours présents, même lorsque les conditions sont difficiles !
-                        Johan se souvient d’une de ces fois où tout ne s’est pas passé comme prévu :
-                        "On part à Paris pour un concert, on charge le camion le matin, 7h de route.
-                        Arrivé à Paris, bouchons. Arrivé dans Paris, bouchons.
-                        Arrivé sur place, pas le temps de faire des balances.
-                        On décharge le matos et on se rend compte 15 minutes avant le concert qu’il nous en manque le quart.
-                        Mais c’était quand même un bon concert !
-                      </p>
-                    </div>
-                    <footer>
-                      <a href="http://cafecomptoir.fr">Lire la suite sur cafecomptoir.fr</a>
-                    </footer>
-                  </blockquote>
-                </article>
-              </div><!--/.zone-body -->
-            </div><!--/.content-wrapper -->
+            <?php print views_embed_view('avis', 'block'); ?>
           </section>
 
           <!-- Section: A propos -->

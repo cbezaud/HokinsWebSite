@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Component : Base layout styles
+   ========================================================================== */
+
+
+/*----------------------------------------------------------------
+	Global styles
+-----------------------------------------------------------------*/
+html {
+	height: 100%;
+	font-size:100%;
+	-ms-overflow-style:scrollbar; // prevent ie10 / ie11 scrollbar overlay
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+	height: 100%;
+	margin: 0;
+	font-size: 100%; // respecte la root font size définie par le navigateur (soit 16px en général).
+	font-family: $font-default; line-height: $line-height-base;
+	color: $color-text-default;
+
+	background: url("#{$pathJpgImg}/main.jpg") fixed center center;
+	-webkit-background-size: cover; background-size: cover;
+}
+
+// box model definition
+*, *:before, *:after { box-sizing: inherit; }
+
+// accessibility
+.quick-access { height:0; overflow:hidden; }
+
+// main container
+#page-container {
+	min-width: $screen-xs-min; height: 100%;
+	margin: 0 auto;
+	font-size: $base-font-size;
+
+	// @todo : use viexport unit ???? (check partial support on IE ??)
+	.header-main,
+	main{ min-height: 100%; }
+}
+
+
+
+main {
+	.content-wrapper {
+		// padding: $base-step*4;
+	}
+}
+
+
+.txt-center {
+	text-align: center;
+}

@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Component : lists
+   ========================================================================== */
+
+/* default rules */
+.list {
+	list-style:none;
+	padding:0; margin:0;
+
+	> li {
+		margin-top: $base-step*2;
+		&:first-child { margin-top: 0; }
+	}
+}
+
+/* inline mode :  */
+.list-inline {
+	@extend .list;
+	@include clearfix;
+
+	margin: 0 (-$base-step);
+
+	> li {
+		float:left;
+		padding: 0; margin: 0 $base-step $base-step*2;
+	}
+}
+
+
+/* table mode :  */
+.list-table {
+	display: table; width: 100%;
+	padding: 0;
+
+	> li { display: table-cell; }
+}
+
+
+/* numbered list */
+ol.list {
+	@extend .list;
+	counter-reset: item;
+
+	> li {
+		&:before {
+			content: counters(item, ".") ".";
+			counter-increment: item;
+		}
+
+		// nested list
+		ol {
+			@extend .list;
+			counter-reset: subitem;
+
+			> li {
+				&:before {
+					content: counters(item, ".") "." counters(subitem, ".") ".";
+					counter-increment: subitem;
+				}
+			}
+		}
+	}
+}

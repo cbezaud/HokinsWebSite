@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Component : Buttons
+   ========================================================================== */
+
+// default rules
+.btn {
+	display: inline-block;
+	padding: $base-step*2 $base-step*4;
+	border: none;
+	white-space: normal;
+
+	// select
+	&.active,
+	&:active {  }
+
+	// disabled
+	&.disabled,
+	&[disabled] { }
+
+	// full-width button
+	.btn-wrapper & { display: block; }
+}
+
+
+/* ==========================================================================
+   Rules for print
+   ========================================================================== */
+@media print {
+	.btn { display: none; }
+}

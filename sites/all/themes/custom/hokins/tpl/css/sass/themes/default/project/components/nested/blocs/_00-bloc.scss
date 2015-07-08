@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Component : Blocs tiles
+   ========================================================================== */
+
+%bloc {
+	display: block;
+	padding: $base-step*4;
+	border: 1px solid $color-border-1;
+}
+
+
+.label {
+	display: block;
+	padding: $base-step*4;
+	white-space: nowrap;
+	text-transform: uppercase;
+	background-color: $color-black; color: $color-white;
+}

@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Component : lists included in text
+   ========================================================================== */
+
+// list with chips (constructor)
+%list-chips {
+	@extend .list;
+	padding-left: $base-step*4;
+	> li {
+		position: relative;
+		padding-left: $base-step*3;
+
+		&:before {
+			position: absolute; top: $base-step; left: 0;
+			margin: (-$base-step) $base-step*2 0 0;
+		}
+
+		// nested list
+		ul {
+			@extend .list;
+			> li {
+				position: relative;
+				padding-left: $base-step*3;
+
+				&:before {
+					position: absolute; top: $base-step*2; left:0;
+					font-size: em(5px);
+					margin: (-$base-step) $base-step*2 0 0;
+				}
+			}
+		}
+	}
+}
+
+
+// list with default chip
+.list-chips {
+	@extend %list-chips;
+	li:before { content: "\2022"; }
+}
+
+
+// list with number
+.list-number {
+	@extend ol.list;
+	padding-left: $base-step*4;
+
+	> li {
+		position: relative;
+		padding-left: $base-step*4;
+
+		&:before {
+			position: absolute; top: 0; left: 0;
+			margin-right: $base-step;
+		}
+
+		// nested list
+		ol {
+			> li {
+				position: relative;
+				padding-left: $base-step*6;
+
+				&:before {
+					position: absolute; top: 0; left: 0;
+					margin-right: $base-step;
+				}
+
+				ol {
+					li { padding-left: $base-step*9; }
+				}
+			}
+		}
+	}
+}
+
+

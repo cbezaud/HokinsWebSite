@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Hokins_avis feature.
+ */
+
+include_once 'hokins_avis.features.inc';

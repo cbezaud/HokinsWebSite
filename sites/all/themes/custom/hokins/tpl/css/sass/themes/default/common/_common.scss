@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Include common styles
+   ========================================================================== */
+
+/* config */
+@import "config/variables";
+@import "config/mixins";
+
+/* normalize css */
+@import "libs/normalize";
+
+/* fonts */
+@import "fonts/fonts";
+
+
+/* components */
+@import "components/components";

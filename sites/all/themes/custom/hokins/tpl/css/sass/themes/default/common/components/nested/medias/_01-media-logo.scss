@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Component : logo
+   ========================================================================== */
+
+/* main logo */
+.logo {
+	display:block;
+	width:100%; height:100%;
+
+	background: url("#{$pathCommonImg}/bg/svg/logo.svg") no-repeat;
+	@include background-size(cover);
+
+	img {
+		display:none;
+		max-width: 100%; max-height: 100%;
+		.no-svg & { display:block; }
+	}
+}
+
+
+
+
+
+/* ==========================================================================
+   Rules for print
+   ========================================================================== */
+@media print {
+	.logo {
+		background:none;
+		img { display:block; }
+	}
+}

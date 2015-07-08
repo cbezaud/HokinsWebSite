@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Component : Forms
+   ========================================================================== */
+
+// field wrapper
+.form-group {
+
+}
+
+// field
+.form-control {
+	height: em(32px);
+	padding: $base-step*2;
+	//border-color: $color-greyscale-6;
+
+	// focus
+	&:focus { border-color: $color-secondary; }
+
+	// readonly
+	&[readonly] { }
+
+	// disabled
+	&[disabled],
+	fieldset[disabled] & { }
+}
+
+
+// field error : global rules
+.has-error {
+	label,
+	.label,
+	.help-block { color: $color-error; }
+
+	.form-control { border-color: $color-error; }
+}

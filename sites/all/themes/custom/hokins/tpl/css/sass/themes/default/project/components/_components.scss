@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Import components : files syntax => '_filename.scss'
+   ========================================================================== */
+
+
+/*----------------------------------------------------------------
+	BASE components
+-----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------
+	NESTED components
+-----------------------------------------------------------------*/
+/* Blocs */
+@import "nested/blocs/00-bloc";
+
+
+/* Grid */
+@import "nested/grid/00-grid";
+
+
+/* Layouts */
+@import "nested/layouts/00-layout";
+@import "nested/layouts/01-header";
+@import "nested/layouts/02-footer";
+
+
+/* Navigations */
+@import "nested/navs/01-nav-scroll";

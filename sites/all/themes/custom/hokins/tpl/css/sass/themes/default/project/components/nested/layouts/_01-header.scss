@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Component : header
+   ========================================================================== */
+
+.header-main {
+	.top-wrapper {
+		display: table;
+		position: fixed; top:0; left:0; right: 0;
+		width: 100%; height: $header-height;
+		background-color: $color-black; // @temp
+
+		.zone-left,
+		.zone-center,
+		.zone-right { display: table-cell; vertical-align: middle; }
+
+
+		.zone-center {
+			width: 100%; // expand to max
+			text-align: center;
+		}
+	}
+
+	.logo-wrapper {
+		width: em(139px); height: em(55px);
+		margin: 0 auto;
+		.logo {
+			background-image: url("#{$pathCommonImg}/bg/svg/logo-white.svg");
+		}
+	}
+
+
+	.nav-wrapper {
+		display: none;
+
+		.list {
+			> li {
+				float: left; width: 50%;
+				margin: 0;
+				text-align: center;
+
+				a {
+					font-size: em(24px);
+					text-transform: uppercase;
+					color: $color-black;
+				}
+			}
+		}
+	}
+
+
+
+
+	@media screen and (min-width: $screen-md) {
+
+		.top-wrapper {
+			position: static;
+			background-color: transparent;
+		}
+
+		.logo-wrapper {
+			width: em(376px); height: em(149px);
+			.logo {
+				background-image: url("#{$pathCommonImg}/bg/svg/logo-black.svg");
+			}
+		}
+
+		.nav-wrapper { display: block; }
+	}
+}
+
+
+
+/* flap nav context : open/close */
+.rwd-page {
+	// padding-top: $header-height;
+	position: relative; left: 0;
+	@include transition(left 0.5s ease-in);
+
+	.flap-btn {
+		padding: $base-step*3 $base-step*4 $base-step*2;
+		white-space: nowrap;
+		line-height: 1;
+		color: $color-white;
+
+		.fa:before {
+			vertical-align: middle;
+			font-size: em(28px);
+		}
+	}
+
+	.flap-panel {
+		position: fixed; top: 0; left: -$flap-width; bottom: 0; z-index: 3; overflow: auto;
+		width: $flap-width;
+		background-color: $color-black; //@temp
+
+		@include transition(left 0.5s ease-in);
+	}
+
+
+	&.flap-open {
+		left: $flap-width;
+		@include transition(left 0.5s ease-in);
+
+		.flap-panel { left:0; }
+	}
+
+
+	.nav-menu {
+		li {
+			margin: 0;
+			a {
+				display: block;
+				padding: $base-step*3 $base-step*4;
+				color: $color-white;
+				text-transform: uppercase; line-height: 1;
+				border-bottom: 1px solid $color-white;
+
+				&:hover, &:focus {
+					background-color: $color-white; color: $color-black;
+				}
+			}
+		}
+	}
+
+
+	// desktop mode
+	@media screen and (min-width: $screen-md) {
+		position:static;
+		padding-top: 0;
+
+		.flap-btn,
+		.flap-panel { display: none; }
+	}
+}

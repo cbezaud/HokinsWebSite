@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Component : Primary Buttons
+   ========================================================================== */
+
+.btn-primary {
+	@extend .btn;
+	background-color: $color-primary; color: $color-white;
+
+	// rollover & focus
+	&:hover,
+	&:focus { background-color: darken($color-primary, 20%); }
+
+	// selected
+	&.active { }
+}

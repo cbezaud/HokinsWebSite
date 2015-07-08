@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Sass Variables
+   ========================================================================== */
+
+/*----------------------------------------------------------------
+	Paths
+-----------------------------------------------------------------*/
+// related to theme
+$pathBgImg: './img/bg';
+$pathSvgImg: './img/bg/svg';
+$pathPngImg: './img/bg/png';
+$pathJpgImg: './img/bg/jpg';
+$pathPngImgx2: './img/bg/png/x2'; // for retina screen
+
+// related to common
+$pathCommonFonts: '../../../fonts';
+$pathCommonImg: '../../../img';
+
+$root-font-size: 16px !default;
+$base-font-size: 12px;
+$base-step: 0.333em !default; // pas de base pour calcul (soit 4px dans un contexte de 12px)
+
+/*----------------------------------------------------------------
+	Colors
+-----------------------------------------------------------------*/
+
+// primary colors
+$color-primary: #0078d2;
+
+// secondary colors
+$color-secondary: #008858;
+
+// tertiary colors
+$color-tertiary: #4c4c4e;
+
+// borders
+$color-border-1: #c1c1c1;
+$color-border-2: #979797;
+
+// Autres
+$color-black: #000;
+$color-white: #fff;
+
+// texts
+$color-text-default: $color-black;
+$color-text-secondary: $color-white;
+
+// default error color
+$color-error: #ff0000;
+
+// links
+$color-link: $color-primary;
+$color-link-hover: darken($color-primary, 20%);
+
+
+/*----------------------------------------------------------------
+	Fonts
+-----------------------------------------------------------------*/
+$font-default: "raleway", Arial, sans-serif !default;
+$font-bold: "ralewaybold", Arial, sans-serif !default;
+$font-icon-fa: "FontAwesome", sans-serif;
+$line-height-base: (16/12) !default;
+
+
+/*----------------------------------------------------------------
+	Grid system
+-----------------------------------------------------------------*/
+$grid-columns: 12 !default;
+$grid-gutter-width: $base-step*4 !default;
+
+
+/*----------------------------------------------------------------
+	Media-queries breakpoints
+	Note : les media-queries en "em" ne tiennent pas compte de la base-font-size.
+	Cela dépend donc du root font size du navigateur (généralement 16px)
+-----------------------------------------------------------------*/
+$screen-xs-min: 20em;    // minimum size for screen : = 320px si base = 16px
+$screen-xs: 30em;   // extra small grid : 30em = 480px si base = 16px
+$screen-sm: 37.5em; // small grid : 37.5em = 600px si base = 16px
+$screen-md: 50em;   // medium grid : 50em = 800px si base = 16px
+$screen-lg: 60em;   // large grid : 60em = 960px
+
+
+/*----------------------------------------------------------------
+	Specific
+-----------------------------------------------------------------*/
+$header-height: 4.86em; // = 68px dans un contexte de font-size = 14px
+$flap-width: 17.8em; //= 200px dans un contexte de font-size = 14px

@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Component : links
+   ========================================================================== */
+
+/* default rules */
+a {
+	text-decoration: none;
+	color: $color-link;
+
+	// rollover, focus & selected
+	&:hover, &:focus, &.active {
+		text-decoration: none;
+		color: $color-link-hover;
+	}
+}

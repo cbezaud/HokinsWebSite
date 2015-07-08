@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Component : Grid system
+   ========================================================================== */
+
+
+/*----------------------------------------------------------------
+	Row
+-----------------------------------------------------------------*/
+.row {
+	@include clearfix();
+	@include box-sizing(border-box);
+
+	margin-left:  ($grid-gutter-width / -2);
+	margin-right: ($grid-gutter-width / -2);
+}
+
+
+/*----------------------------------------------------------------
+	Columns
+-----------------------------------------------------------------*/
+[class^="col-"],
+[class*=" col-"] {
+	position: relative;
+
+	// Prevent columns from collapsing when empty
+	min-height: 1px;
+
+	// Inner gutter via padding
+	padding-left:  ($grid-gutter-width / 2);
+	padding-right: ($grid-gutter-width / 2);
+
+	@include box-sizing(border-box);
+}
+
+
+/*----------------------------------------------------------------
+	Extra small grid
+	todo : mixin ?
+-----------------------------------------------------------------*/
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5 { float:left; }
+
+.col-xs-1 { width: percentage((1 / $grid-columns)); }
+.col-xs-2 { width: percentage((2 / $grid-columns)); }
+.col-xs-3 { width: percentage((3 / $grid-columns)); }
+.col-xs-4 { width: percentage((4 / $grid-columns)); }
+.col-xs-5 { width: percentage((5 / $grid-columns)); }
+.col-xs-6 { width:100%; }
+
+
+/*----------------------------------------------------------------
+	Small grid
+	todo : mixin ?
+-----------------------------------------------------------------*/
+@media (min-width: $screen-sm) {
+	.col-sm-1,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-4,
+	.col-sm-5 { float:left; }
+
+	.col-sm-1 { width: percentage((1 / $grid-columns)); }
+	.col-sm-2 { width: percentage((2 / $grid-columns)); }
+	.col-sm-3 { width: percentage((3 / $grid-columns)); }
+	.col-sm-4 { width: percentage((4 / $grid-columns)); }
+	.col-sm-5 { width: percentage((5 / $grid-columns)); }
+	.col-sm-6 { width:100%; }
+}
+
+
+/*----------------------------------------------------------------
+	Medium grid
+	todo : mixin ?
+-----------------------------------------------------------------*/
+@media (min-width: $screen-md) {
+	.col-md-1,
+	.col-md-2,
+	.col-md-3,
+	.col-md-4,
+	.col-md-5 { float:left; }
+
+	.col-md-1 { width: percentage((1 / $grid-columns)); }
+	.col-md-2 { width: percentage((2 / $grid-columns)); }
+	.col-md-3 { width: percentage((3 / $grid-columns)); }
+	.col-md-4 { width: percentage((4 / $grid-columns)); }
+	.col-md-5 { width: percentage((5 / $grid-columns)); }
+	.col-md-6 { width:100%; }
+}
+
+
+/*----------------------------------------------------------------
+	Extra large grid
+	todo : mixin ?
+-----------------------------------------------------------------*/
+@media (min-width: $screen-lg) {
+	.col-lg-1,
+	.col-lg-2,
+	.col-lg-3,
+	.col-lg-4,
+	.col-lg-5 { float:left; }
+
+	.col-lg-1 { width: percentage((1 / $grid-columns)); }
+	.col-lg-2 { width: percentage((2 / $grid-columns)); }
+	.col-lg-3 { width: percentage((3 / $grid-columns)); }
+	.col-lg-4 { width: percentage((4 / $grid-columns)); }
+	.col-lg-5 { width: percentage((5 / $grid-columns)); }
+	.col-lg-6 { width:100%; }
+}
