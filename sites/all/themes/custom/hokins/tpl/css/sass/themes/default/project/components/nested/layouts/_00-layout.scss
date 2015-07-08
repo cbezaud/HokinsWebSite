@@ -16,11 +16,11 @@ body {
 	overflow-x: hidden;
 	height: 100%;
 	margin: 0;
-	font-size: 100%; // respecte la root font size définie par le navigateur (soit 16px en général).
+	font-size: 100%; // respecte la root font size dï¿½finie par le navigateur (soit 16px en gï¿½nï¿½ral).
 	font-family: $font-default; line-height: $line-height-base;
 	color: $color-text-default;
 
-	background: url("#{$pathJpgImg}/main.jpg") fixed center center;
+	background: url("#{$pathJpgImg}/fondweb.jpg") fixed center center;
 	-webkit-background-size: cover; background-size: cover;
 }
 

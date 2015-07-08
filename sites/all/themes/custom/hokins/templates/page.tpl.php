@@ -123,7 +123,7 @@
               <div class="zone-body">
                 <div class="media">
                   <div class="img-wrapper">
-                    <img src="/<?php print path_to_theme(); ?>/tp/img/medias/albums/HOKINS_EPochette.jpg" alt="EP - Hokins" />
+                    <img src="/<?php print path_to_theme(); ?>/tpl/img/medias/albums/HOKINS_EPochette.jpg" alt="EP - Hokins" />
                   </div>
                   <div class="media-body">
                     <h2>Le premier EP des Hokins</h2>
@@ -220,55 +220,15 @@
 
           <!-- Section: Contacts -->
           <footer class="footer-main zone bg" id="s-contacts" data-anchor="z-contacts" role="contentinfo">
-            <div class="content-wrapper">
-              <header>
-                <h1 class="title">Contacts</h1>
-                <span class="h2">Suivez-nous</span>
-              </header>
-
-              <div class="zone-body">
-                <div class="flex-grid">
-                  <div class="cell-manager">
-                    <h2>Manager</h2>
-                    <dl>
-                      <dt>Email: </dt>
-                      <dd><a href="mailto:contact.hokins@gmail.com"></a>contat.hokins@gmail.com</dd>
-                    </dl>
-                  </div>
-
-                  <div class="cell-network">
-                    <ul class="list-inline">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="#"><span class="fa fa-soundcloud"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-vimeo-square"></span></a></li>
-                    </ul>
-                  </div>
-
-                  <div class="cell-agent">
-                    <h2>Agent</h2>
-                    <dl>
-                      <dt>Email: </dt>
-                      <dd><a href="mailto:booking.hokins@gmail.com"></a>booking.hokins@gmail.com</dd>
-                    </dl>
-                  </div>
-                </div>
-
-                <div class="copyright">
-                  <p>
-                    <strong><span class="fa fa-copyright"></span> Hokins</strong>
-                    All right reserved
-                  </p>
-                </div>
-              </div><!--/.zone-body -->
-            </div><!--/.content-wrapper -->
+            <?php print render($page['footer']); ?>
           </footer>
+
         </div><!--/.page-content -->
       </div><!--/.content-main -->
     </main>
   </div><!--/#page-container -->
 
-  <?php print render($page['footer']); ?>
+
 
 </div>
 
