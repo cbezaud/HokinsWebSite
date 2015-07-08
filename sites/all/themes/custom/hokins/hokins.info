@@ -50,11 +50,8 @@ base theme  = zen
 ;stylesheets[all][] = system.theme.css
 
 ; Then we add our own stylesheet.
-;stylesheets[all][] = css/styles.css
-;stylesheets[all][] = tpl/css/site_global.css
-;stylesheets[all][] = tpl/css/index.css
-stylesheets[all][] = tpl2/css/themes/default/external.css
-stylesheets[all][] = tpl2/css/themes/default/main.css
+stylesheets[all][] = tpl/css/themes/default/external.css
+stylesheets[all][] = tpl/css/themes/default/main.css
 
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
 ; Instead, Zen now adds conditional-comment-included classes to the html
@@ -67,10 +64,10 @@ stylesheets[all][] = tpl2/css/themes/default/main.css
 ;stylesheets-conditional[lte IE 8][all][] = css/ie8.css
 
 ; Optionally add some JavaScripts to your theme.
-scripts[] = tpl2/js/libs/jquery-1.11.3.min.js
-scripts[] = tpl2/js/libs/jquery.fullPage.js
-scripts[] = tpl2/js/plugins.js
-scripts[] = tpl2/js/main.js
+scripts[] = tpl/js/libs/jquery-1.11.3.min.js
+scripts[] = tpl/js/libs/jquery.fullPage.js
+scripts[] = tpl/js/plugins.js
+scripts[] = tpl/js/main.js
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and

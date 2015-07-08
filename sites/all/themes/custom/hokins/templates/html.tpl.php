@@ -35,9 +35,9 @@
 
   <?php print $styles; ?>
 
-  <script src="/sites/all/themes/custom/hokins/tpl2/js/libs/modernizr-2.8.3.min.js"></script>
+  <script src="/sites/all/themes/custom/hokins/tpl/js/libs/modernizr-2.8.3.min.js"></script>
   <!--[if lt IE 9]>
-  <script src="../tpl2/js/libs/respond.min.js"></script>
+  <script src="../tpl/js/libs/respond.min.js"></script>
   <![endif]-->
 </head>
 

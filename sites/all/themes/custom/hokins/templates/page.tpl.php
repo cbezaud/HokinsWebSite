@@ -91,7 +91,7 @@
               <div class="zone-center">
                 <div class="logo-wrapper">
                     <span class="logo">
-                      <img alt="Hokins" src="/<?php print path_to_theme(); ?>/tpl2/img/bg/png/logos/logo.png">
+                      <img alt="Hokins" src="/<?php print path_to_theme(); ?>/tpl/img/bg/png/logos/logo.png">
                     </span>
                 </div><!--/.logo-wrapper -->
               </div><!--/.zone-center -->
@@ -123,7 +123,7 @@
               <div class="zone-body">
                 <div class="media">
                   <div class="img-wrapper">
-                    <img src="/<?php print path_to_theme(); ?>/tpl2/img/medias/albums/HOKINS_EPochette.jpg" alt="EP - Hokins" />
+                    <img src="/<?php print path_to_theme(); ?>/tpl/img/medias/albums/HOKINS_EPochette.jpg" alt="EP - Hokins" />
                   </div>
                   <div class="media-body">
                     <h2>Le premier EP des Hokins</h2>
@@ -140,14 +140,12 @@
             </div><!--/.content-wrapper -->
           </section>
 
-
           <!-- Section: En écoute -->
           <section class="z-ecoute zone bg" id="s-ecoute" data-anchor="z-ecoute">
             <div class="content-wrapper">
               <header>
                 <h1 class="title">En écoute</h1>
               </header>
-
               <div class="zone-body">
                 <ul class="list">
                   <li>
@@ -174,7 +172,10 @@
               </header>
 
               <div class="zone-body txt-center">
-                <iframe class="actAsDiv" src="http://www.youtube.com/embed/fTCxp_Dl8w4?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=0&modestbranding=0&start=0&fs=1&iv_load_policy=3&wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+                <iframe class="actAsDiv"
+                        src="http://www.youtube.com/embed/fTCxp_Dl8w4?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=0&modestbranding=0&start=0&fs=1&iv_load_policy=3&wmode=transparent&rel=0"
+                        frameborder="0"
+                        allowfullscreen></iframe>
               </div><!--/.zone-body -->
             </div><!--/.content-wrapper -->
           </section>
